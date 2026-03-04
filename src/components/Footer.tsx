@@ -22,9 +22,14 @@ const Footer = () => {
               </Button>
             ))}
           </div>
-          <p>
-            <i>{footerData.quote}</i>
-          </p>
+          <div className="flex flex-col gap-1 items-end">
+            <p>
+              <i>{footerData.quote}</i>
+            </p>
+            <p className="text-xs text-muted-foreground/60 mt-2">
+              Desenvolvido por Juliano Ceconi • Design original por <a href="https://github.com/isaac-ros/Astro-Shadcn-portfolio" target="_blank" rel="noreferrer" className="underline hover:text-foreground">Isaac Ros</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

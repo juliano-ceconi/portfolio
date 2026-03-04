@@ -60,4 +60,4 @@ Entre em contato:
 - 🌐 **Site/Portfólio:** [julianoceconi.vercel.app](https://julianoceconi.vercel.app/)
 
 ---
-*Este repositório contém o código-fonte do meu portfólio pessoal e demonstrações de ferramentas desenvolvidas.*
+*Este portfólio foi personalizado e desenvolvido a partir do template [Astro-Shadcn-portfolio](https://github.com/isaac-ros/Astro-Shadcn-portfolio) criado por [isaac-ros](https://github.com/isaac-ros).*
