@@ -1,115 +1,63 @@
-# 🚀 Personal Portfolio
+# 🚀 Juliano Ceconi - Gestor e Desenvolvedor de Automações
 
-This is my **personal portfolio website**, where I showcase some of the work that I do not include in my resume. I built this project to explore **modern front-end technologies**, improve my **deployment skills**, and experiment with **UI frameworks**.
+[![Portfólio](https://img.shields.io/badge/Acessar-Portfólio-blue?style=for-the-badge&logo=vercel)](https://julianoceconi.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juliano-ceconi-8ba137121/)
 
-## 🌟 Motivation
-
-I created this portfolio for three main reasons:
-
-1. **Showcase Unlisted Work** – Some of my projects don’t fit in a traditional resume, but I still wanted to share them publicly.
-2. **Learn New Technologies** – This project helped me explore **Astro** and **Shadcn components**, as well as integrating **React** into an Astro project.
-3. **Improve Front-End & Deployment Skills** – I used **Vercel** for hosting and experimented with different tools to improve my workflow.
-
-## 🛠️ Tech Stack
-
-- **Framework:** Astro  
-- **UI Components:** Shadcn (React-based)  
-- **Hosting:** Vercel  
-- **Mockup Tool:** Started with [Bolt.new](https://bolt.new/)  
-
-## 🎨 Development Process
-
-I initially designed a **mockup** using **Bolt.new** and then iterated on the code, making updates and modifications. The process was straightforward and fun, and I enjoyed learning how to integrate **React inside Astro** to make use of Shadcn's UI components.
-
-## 📌 Notes for Cloning & Usage
-
-- You can **clone and modify this project** to create your own portfolio.
-- If you use this as a base, I’d appreciate it if you **mention my portfolio** or this repo in the footer:  
-  ➡ **[isaac-rosales.vercel.app](https://isaac-rosales.vercel.app)**
-  ➡ **[Astro-Shadcn-portfolio](https://github.com/raulrls/Astro-Shadcn-portfolio)**
+> "Transformando processos manuais e complexos em sistemas automatizados eficientes."
 
 ---
 
-## Overview
-This project is a portfolio website showcasing projects, experience, and skills. Built using modern web technologies, it provides an interactive and dynamic way to present professional achievements.
+## 💡 Sobre Mim
 
-## Features
-- Dynamic project showcase
-- Skills and experience display
-- Contact and social media links
-- Customizable data files for easy updates
+Sou um Gestor e Desenvolvedor com sólida experiência em administração de negócios. Com um histórico único que vai desde a gestão em empresas de saúde — atuando como sócio-administrador desde a planta até a venda do negócio — até a programação avançada, possuo uma visão privilegiada de como a tecnologia deve servir aos objetivos estratégicos de uma empresa.
 
-## Installation
+Minha especialidade é **encontrar gargalos operacionais e construir soluções inteligentes** (utilizando Google Apps Script, Python, Excel e Inteligência Artificial) para otimizar tempo, reduzir custos e melhorar a precisão dos dados, permitindo que as equipes foquem no que realmente traz resultado.
 
-To run the project locally, follow these steps:
+---
 
-### 1️⃣ Clone the repository
+## 🛠️ Tecnologias e Habilidades
 
-```sh
-git clone https://github.com/raulrls/Astro-Shadcn-portfolio
-cd YOUR_PORTFOLIO_REPO
-```
+- **Automação & Scripting:** Python, Google Apps Script, Selenium
+- **Análise de Dados & Integrações:** Excel Avançado / VBA, Google Sheets, Power BI, APIs REST
+- **Desenvolvimento Web:** HTML, CSS, JavaScript
+- **IA e Mensageria:** Twilio (WhatsApp), integrações de fluxo com ChatGPT/LLMs
+- **Gestão e Processos:** Liderança, Visão Sistêmica, DRE/Fluxo de Caixa, Otimização de Fluxos, Treinamento de Equipes
 
-```sh
-npm install
-```
+---
 
-```sh
-npm run dev
-```
-This will start a local development server, and you can preview the portfolio by opening http://localhost:4321 in your browser.
+## 💼 O Que Eu Faço? (Serviços)
 
-## Modifying the `/data` Files
+- 🤖 **Criação de Robôs e Automações:** Automatização de tarefas repetitivas dentro do ecossistema Google Workspace e da máquina local, sincronização de planilhas, geração de PDFs, envios automáticos e notificações empresariais.
+- 🌐 **Web Scraping e Interações Web:** Scripts construídos sob medida em Python/Selenium para extração de dados e automação de preenchimentos.
+- ⚙️ **Ferramentas Internas e Dashboards:** Desenvolvimento de pequenos sistemas e interfaces para PMEs (ideal para quem paga caro em ERPs robustos mas utiliza apenas 10% deles) voltados ao controle financeiro, de estoques e de clientes.
+- 📊 **Consultoria e Desenho de Processos:** Auditoria de fluxos de trabalho para implementar automações cirúrgicas exatamente onde a empresa mais perde tempo e dinheiro.
 
-The project uses data stored in `/data` files to dynamically render content. You can modify these files to customize the information displayed on your portfolio.
+---
 
-### `/data/config.ts`
-This file contains global configuration settings such as the site title, description, author name, and social media links.
+## 📈 Experiência em Destaque
 
-**Example:**
-```ts
-export const config = {
-  siteTitle: 'John Doe Portfolio',
-  description: 'Hi, I am John Doe, a passionate web developer and data analyst.',
-  author: 'John Doe',
-  contactEmail: 'johndoe@example.com',
-  social: {
-    linkedin: 'https://www.linkedin.com/in/johndoe/',
-    github: 'https://github.com/johndoe'
-  }
-};
-```
-Modify the values accordingly and save the file to see updates reflected on the site.
+**Head Financeiro e Desenvolvedor de Automações @ MedPless Assist**
+- Reduzi o tempo e os erros de processamento manual criando do zero um **Sistema de Automação de Notas Fiscais em Python**.
+- Desenvolvi um ecossistema financeiro altamente coeso via **Google Sheets & Apps Script**, com disparo de cobranças automatizadas e geração de DRE.
+- Gerenciei o faturamento, os repasses financeiros e o relacionamento direto com mais de 80 clínicas/hospitais e dezenas de profissionais de saúde.
 
-### `/data/jobs.ts`
-Defines the job history section of the portfolio. Each job entry includes title, company, dates, and a description.
+**Sócio-Administrador @ Clínica da Cidade (Barreiras)**
+- Fui responsável por toda a gestão do negócio, do projeto civil até a consolidação comercial e venda da unidade.
+- Gerenciamento integral de contas (C/P e C/R), projeções, fluxo de caixa e gestão de equipes multidisciplinares.
 
-**Example:**
-```ts
-export const jobs = [
-  {
-    title: "Software Engineer",
-    company: "Tech Corp",
-    dates: "01/2020 - Present",
-    description: [
-      "Developed full-stack applications using React and Node.js.",
-      "Implemented RESTful APIs for data processing.",
-      "Optimized SQL queries and database performance."
-    ]
-  }
-];
-```
-and so on...
+**Gerente de Operações @ Microlins**
+- Responsável pelos setores comercial, pedagógico e financeiro. Modifiquei processos de retenção e ensino que resultaram em alta eficiência e satisfação dos alunos.
 
-### `/data/projects.ts`
-Defines the projects showcased in the portfolio. Each project includes an ID, title, summary, images, tags, and details.
+---
 
-### `/data/hero.ts`
-Defines the main personal introduction section.
+## 📬 Vamos Conversar?
 
-### `/data/footer.ts`
-Defines the footer information, including social links and a quote.
+Busca um profissional que entende o "tecniquês" da programação, mas que **fala a linguagem dos negócios**? Alguém que não apenas entrega scripts, mas resolve problemas reais de faturamento, operação e escala? 
 
-## 📜 License
-Feel free to use and modify this project! If you find it useful, a mention would be appreciated. 🚀
+Entre em contato:
+- 📧 **E-mail:** [ceconilp@gmail.com](mailto:ceconilp@gmail.com)
+- 💼 **LinkedIn:** [Acesse meu perfil e mande uma mensagem!](https://www.linkedin.com/in/juliano-ceconi-8ba137121/)
+- 🌐 **Site/Portfólio:** [julianoceconi.vercel.app](https://julianoceconi.vercel.app/)
 
+---
+*Este repositório contém o código-fonte do meu portfólio pessoal e demonstrações de ferramentas desenvolvidas.*
