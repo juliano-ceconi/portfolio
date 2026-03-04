@@ -3,7 +3,7 @@ export const footerData = {
   socialLinks: [
     {
       name: 'GitHub',
-      url: 'https://github.com/vo-tech',
+      url: 'https://github.com/juliano-ceconi',
       icon: 'Github'
     },
     {

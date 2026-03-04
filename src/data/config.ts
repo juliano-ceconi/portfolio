@@ -7,6 +7,6 @@ export const config = {
   favicon: '/favicon.svg',
   social: {
     linkedin: 'https://www.linkedin.com/in/juliano-ceconi-8ba137121/',
-    github: 'https://github.com/vo-tech'
+    github: 'https://github.com/juliano-ceconi'
   }
 };
