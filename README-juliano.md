@@ -2,9 +2,9 @@
 
 Nome: Juliano Ceconi
 Idade: 33
-e-mail: ceconilp@gmail.com
-GitHub: https://github.com/juliano-ceconi
-LinkedIn: https://www.linkedin.com/in/juliano-ceconi-8ba137121/
+e-mail: [ceconilp@gmail.com]
+GitHub: [https://github.com/juliano-ceconi]
+LinkedIn: [https://www.linkedin.com/in/juliano-ceconi-8ba137121/]
 
 ## Sobre mim
 
