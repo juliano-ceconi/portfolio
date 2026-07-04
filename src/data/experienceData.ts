@@ -24,19 +24,11 @@ export const jobs: Job[] = [
     company: "MedPless Assist",
     dates: "Maio/24 a Junho/25",
     description: [
-      "Liderei a modernização e automação de processos financeiros e de TI críticos na MedPless Assist, transformando operações manuais em sistemas eficientes e orientados por dados. Meu foco foi em otimizar o fluxo de trabalho, reduzir erros e liberar tempo da equipe para atividades de maior valor.",
-      "Desenvolvimento de Sistema de Automação de NF em Python: Criei uma solução completa em Python para automatizar a emissão de notas fiscais, o que resultou em uma redução drástica no tempo de processamento manual e na minimização de erros humanos.",
-      "Implementação de Sistema Financeiro Integrado em Google Sheets & Apps Script: Desenvolvi e implementei um robusto sistema financeiro utilizando Google Sheets e Google Apps Script. Este sistema incluía:",
-      "  Dashboards dinâmicos para visualização de dados em tempo real.",
-      "  Controle de fluxo de caixa e gestão de contas.",
-      "  Geração e envio automático de faturas em PDF por e-mail.",
-      "  Logs de atividades para auditoria e rastreabilidade.",
-      "  Envio automatizado de lembretes e notificações financeiras via WhatsApp (integrado com Twilio)",
-      "  Geração automática de DRE (Demonstração do Resultado do Exercício).",
-      "Capacitação da Equipe: Realizei treinamentos em Excel e Google Sheets para a equipe, melhorando suas habilidades em manipulação de dados e uso das novas ferramentas implementadas.",
-      "Relacionamento com cerca de 80 clínicas, laboratórios, hospitais e mais de 20 profissionais da área da saúde, assim como gestão de todos os faturamentos e repasses.",
-      "Criação de materiais de apoio em vídeo, doc, pdf.",
-      "Tecnologias e Habilidades Chave Aplicadas: Python, Google Apps Script, Google Sheets / Excel (Avançado), APIs, Automação de Processos (RPA), Análise Financeira, Design de Sistemas, Otimização de Fluxos de Trabalho, Treinamento de Equipes."
+      "Liderei a modernização e automação de processos financeiros e de TI críticos, transformando operações manuais em sistemas orientados por dados — reduzindo erros e liberando a equipe para atividades de maior valor.",
+      "Automação de NF em Python: solução completa que eliminou o processamento manual de notas fiscais, com redução drástica de tempo e erros.",
+      "Sistema Financeiro Integrado (Google Sheets + Apps Script + Twilio): dashboards em tempo real, fluxo de caixa, faturas em PDF automáticas, notificações via WhatsApp e geração de DRE — tudo em um ecossistema rastreável e auditável.",
+      "Gestão de relacionamento com ~80 clínicas, laboratórios e hospitais + 20 profissionais da saúde, responsável por todo o ciclo de faturamento e repasses.",
+      "Tecnologias: Python, Google Apps Script, Google Sheets/Excel, APIs, Twilio, RPA."
     ]
   },
   {
