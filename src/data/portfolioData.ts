@@ -73,5 +73,21 @@ export const projects: Project[] = [
         "Crescimento mais inteligente e eficiente da empresa."
       ]
     }
+  },
+  {
+    id: 5,
+    title: "Orquestração de Agentes de IA e Automações Inteligentes",
+    summary: "Projetar e implementar ecossistema completo de agentes de IA e automações na Hub Agente IA, integrando n8n, RAG, MCP, WhatsApp via Evolution API e múltiplos sistemas conectados.",
+    tags: ["n8n", "RAG", "MCP", "Docker", "Supabase", "Node.js", "Evolution API", "Redis", "VPS"],
+    details: {
+      challenge: "Demanda por um ecossistema integrado de agentes de IA e automações capaz de atender leads, qualificar conversas e gerenciar operações de forma autônoma e escalável.",
+      solution: "Estruturação de quatro pilares complementares: (1) Workflows n8n para automações de lead nurturing e mensageria; (2) Engenharia de prompt com RAG para agentes com contexto dinâmico; (3) Infraestrutura Docker em VPS com Supabase/Postgres e Redis; (4) Sistemas web conectados via API para gestão visual.",
+      impact: [
+        "Automação completa do ciclo de atendimento e qualificação de leads (MIA).",
+        "Agentes autônomos com memória e contexto via RAG e bases vetoriais.",
+        "Infraestrutura escalável e de baixo custo com Docker + VPS.",
+        "Ecossistema extensível via MCP para conectar novas ferramentas e serviços."
+      ]
+    }
   }
 ];
