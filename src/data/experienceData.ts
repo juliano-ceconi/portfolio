@@ -7,6 +7,19 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
+    title: "Founder & CTO",
+    company: "Hub Agente IA",
+    dates: "2024 - Presente",
+    description: [
+      "Fundação e liderança técnica da Hub Agente IA, empresa focada em desenvolvimento de IA e softwares customizáveis. Estruturação de um ecossistema de orquestração de automações e agentes de IA em quatro pilares:",
+      "Automações e Workflows: Orquestração de fluxos integrados no n8n e mensageria via Evolution API (WhatsApp) para atendimento e qualificação inteligente de leads.",
+      "Engenharia de Prompt e RAG: Versionamento de system prompts e gestão de bases de conhecimento vetoriais para agentes autônomos com contexto dinâmico.",
+      "Dados e Infraestrutura: Arquitetura de banco relacional com Supabase/PostgreSQL, cache com Redis e infraestrutura de servidores VPS rodando Docker.",
+      "Sistemas Integrados: Desenvolvimento de aplicações satélites conectadas — interfaces de controle de leads, dashboards operacionais e gestão via API.",
+      "Tecnologias: n8n, Docker, Supabase, PostgreSQL, Redis, Node.js, Evolution API, MCP, RAG, VPS, Python, Google Apps Script."
+    ]
+  },
+  {
     title: "Gerente Financeiro e Desenvolvedor de Automações",
     company: "MedPless Assist",
     dates: "Maio/24 a Junho/25",
