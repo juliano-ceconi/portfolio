@@ -166,7 +166,7 @@ const Hero = () => {
             </span>
           </div>
         </div>
-        <div className="mb-4 flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
+        <div className="mb-4 flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
           {heroData.skills.map((skill) => (
             <Badge key={skill} variant="secondary" className="text-sm">
               {skill}
