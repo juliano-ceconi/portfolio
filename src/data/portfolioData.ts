@@ -12,6 +12,10 @@ export interface Project {
     title: string;
     url: string;
   };
+  links?: {
+    title: string;
+    url: string;
+  }[];
 }
 export const projects: Project[] = [
   {
@@ -89,5 +93,55 @@ export const projects: Project[] = [
         "Ecossistema aberto via MCP para conectar novas ferramentas sem retrabalho."
       ]
     }
+  },
+  {
+    id: 6,
+    title: "Okam - Governança e Memória para IA",
+    summary: "Framework open-source desenvolvido para resolver a falta de memória persistente e consistência de comportamento em agentes de IA. Automatiza a governança através de hooks nativos do Git e estrutura bases de conhecimento locais no padrão OKF.",
+    tags: ["Open Source", "Python", "Git Hooks", "Governança de IA", "CLI", "YAML/Markdown"],
+    details: {
+      challenge: "Agentes de IA e copilots iniciam cada sessão do zero, sem contexto sobre regras arquiteturais ou decisões passadas, gerando retrabalho e inconsistências.",
+      solution: "Criação de um CLI em Python sem dependências externas que instala hooks nativos do Git (pre-commit/push) para validação estrutural e detecção de segredos, e viabiliza a manutenção de uma LLM Wiki de contexto persistente.",
+      impact: [
+        "Prevenção contra o vazamento de segredos/chaves de API no commit.",
+        "Garantia de consistência das regras de codificação compartilhadas em meta-repositórios.",
+        "Integração contínua da inteligência do projeto no ciclo de vida de desenvolvimento."
+      ]
+    },
+    links: [
+      {
+        title: "Visualizar Página",
+        url: "https://okam-os.vercel.app/"
+      },
+      {
+        title: "Repositório GitHub",
+        url: "https://github.com/juliano-ceconi/okam"
+      }
+    ]
+  },
+  {
+    id: 7,
+    title: "Doroapp - Protocolo Deep Focus",
+    summary: "Aplicativo gamificado de gerenciamento de tempo e foco absoluto (Pomodoro) com estética cyberpunk retro-futurista. Projetado especificamente para desenvolvedores e otimizado com mecânicas de RPG.",
+    tags: ["Frontend", "Vanilla JavaScript", "CSS3", "Gamificação", "Web App", "LocalStorage"],
+    details: {
+      challenge: "Procrastinação e falta de engajamento no foco prolongado de codificação usando ferramentas de produtividade convencionais.",
+      solution: "Construção de uma SPA de alta performance (Zero Dependency) com sistema de progressão de 50 níveis, ganho de XP em tempo real, console CLI integrado para controle de tempos e presets, e efeitos visuais CRT/glitch.",
+      impact: [
+        "Aumento expressivo no tempo de foco concentrado via gamificação de tarefas.",
+        "Carregamento ultra-rápido e persistência de dados localmente (streaks, XP) resiliente.",
+        "Experiência de uso engajante inspirada na estética do terminal da Matrix."
+      ]
+    },
+    links: [
+      {
+        title: "Visualizar Página",
+        url: "https://doroapp.vercel.app/"
+      },
+      {
+        title: "Repositório GitHub",
+        url: "https://github.com/juliano-ceconi/doroapp"
+      }
+    ]
   }
 ];
