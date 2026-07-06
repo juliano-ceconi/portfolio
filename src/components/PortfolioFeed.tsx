@@ -57,6 +57,13 @@ const ProjectCard = ({ project }: { project: Project }) => {
                   </a>
                 </Button>
               )}
+              {project.links && project.links.map((link, idx) => (
+                <Button key={idx} variant="link" className="flex items-center gap-2 text-md" asChild>
+                  <a href={link.url} target="_blank" rel="noopener noreferrer">
+                    {link.title}
+                  </a>
+                </Button>
+              ))}
             </div>
           </div>
 
