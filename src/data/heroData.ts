@@ -2,7 +2,7 @@ export const heroData = {
   name: "Juliano Ceconi",
   title: "Founder & CTO | Arquiteto de Automação e IA",
   description:
-    "Founder & CTO da Hub Agente IA. Projeto e orquestro agentes de IA, automações inteligentes e infra cloud-native. O diferencial: engenharia de software com visão de gestão — soluções que resolvem problemas reais de negócio.",
+    "Founder & CTO da Hub Agente IA e criador dos projetos Okam e DoroApp. Projeto e orquestro agentes de IA, automações inteligentes e infra cloud-native. O diferencial: engenharia de software com visão de gestão — soluções que resolvem problemas reais de negócio.",
   profilePicture: "https://i.imgur.com/VZjuj6M.png",
   skills: [
     "n8n",

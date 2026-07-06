@@ -15,7 +15,7 @@ export const jobs: Job[] = [
       "Automações e Workflows: Orquestração de fluxos integrados no n8n e mensageria via Evolution API (WhatsApp) para atendimento e qualificação inteligente de leads.",
       "Engenharia de Prompt e RAG: Versionamento de system prompts e gestão de bases de conhecimento vetoriais para agentes autônomos com contexto dinâmico.",
       "Dados e Infraestrutura: Arquitetura de banco relacional com Supabase/PostgreSQL, cache com Redis e infraestrutura de servidores VPS rodando Docker.",
-      "Sistemas Integrados: Desenvolvimento de aplicações satélites conectadas — interfaces de controle de leads, dashboards operacionais e gestão via API.",
+      "Sistemas Integrados: Desenvolvimento de aplicações satélites conectadas — interfaces de controle de leads, dashboards operacionais e gestão via API. Criação e incubação interna dos projetos Okam (governança de IA) e Doroapp (gestão de foco cyberpunk) como laboratórios de engenharia da empresa.",
       "Tecnologias: n8n, Docker, Supabase, PostgreSQL, Redis, Node.js, Evolution API, MCP, RAG, VPS, Python, Google Apps Script."
     ]
   },
