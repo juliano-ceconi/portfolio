@@ -6,6 +6,7 @@ import { MoonIcon, SunIcon } from "lucide-react"
 import Hero from '@/components/Hero';
 import Experience from '@/components/Experience';
 import PortfolioFeed from '@/components/PortfolioFeed';
+import SitesFeed from '@/components/SitesFeed';
 import Education from '@/components/Education'; // Import the new Education component
 import Footer from '@/components/Footer';
 import { config } from '../data/config';
@@ -36,6 +37,7 @@ import { config } from '../data/config';
       </Button>
     </div>
     <Hero client:load />
+    <SitesFeed client:visible />
     <Experience client:visible />
     <PortfolioFeed client:visible />
     <Education client:visible /> {/* Add the Education component here */}
