@@ -7,7 +7,16 @@ import { sites, type Site } from '@/data/sitesData';
 
 const SiteCard = ({ site }: { site: Site }) => {
   return (
-    <Card className="flex h-full flex-col">
+    <Card className="flex h-full flex-col overflow-hidden">
+      <img
+        src={`/vitrine/${site.slug}.webp`}
+        alt={`Página inicial do site ${site.name}`}
+        width={800}
+        height={500}
+        loading="lazy"
+        decoding="async"
+        className="aspect-[8/5] w-full border-b border-border object-cover object-top"
+      />
       <CardHeader className="space-y-2 pb-2">
         <Badge variant="secondary" className="w-fit">
           {site.label}

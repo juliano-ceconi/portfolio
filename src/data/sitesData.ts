@@ -4,6 +4,8 @@ export interface Site {
   pitch: string;
   tags: string[];
   url: string;
+  /** Usado para localizar a captura de tela em `public/vitrine/<slug>.webp`. */
+  slug: string;
   /** Rótulo do card: separa trabalho entregue a cliente de produto próprio. */
   label: 'Cliente' | 'Projeto próprio';
 }
@@ -16,6 +18,7 @@ export const sites: Site[] = [
       'Site de negócio local que transforma visita em conversa: contato direto no WhatsApp, tabela de serviços e presença no Google Maps.',
     tags: ['Landing page', 'SEO local', 'WhatsApp', 'Responsivo'],
     url: 'https://tiamimi.vercel.app/',
+    slug: 'petsitting-lem',
     label: 'Cliente',
   },
   {
@@ -25,6 +28,7 @@ export const sites: Site[] = [
       'Plataforma de cursos completa, com área de aluno, vídeo e acompanhamento de progresso — hospedada em servidor próprio.',
     tags: ['Plataforma de cursos', 'Área de aluno', 'React', 'Servidor próprio'],
     url: 'https://academy.zanettin.cloud',
+    slug: 'academy',
     label: 'Projeto próprio',
   },
   {
@@ -34,6 +38,7 @@ export const sites: Site[] = [
       'Portal de produto que explica uma solução técnica em linguagem simples e leva o visitante direto ao download.',
     tags: ['Site de produto', 'Documentação', 'Conversão'],
     url: 'https://opencro.vercel.app',
+    slug: 'opencro',
     label: 'Projeto próprio',
   },
   {
@@ -43,6 +48,7 @@ export const sites: Site[] = [
       'Site institucional de um framework de governança de IA, com estrutura de conteúdo pensada para quem chega pela busca.',
     tags: ['Site institucional', 'Conteúdo', 'Performance'],
     url: 'https://okam-os.vercel.app/',
+    slug: 'okam',
     label: 'Projeto próprio',
   },
   {
@@ -52,6 +58,7 @@ export const sites: Site[] = [
       'Página comercial de consultoria: mostra a dor do cliente no topo e leva ao WhatsApp em um clique, sem formulário no caminho.',
     tags: ['Página comercial', 'Consultoria B2B', 'WhatsApp', 'Conversão'],
     url: 'https://gatopretoia.vercel.app/',
+    slug: 'gato-preto',
     label: 'Projeto próprio',
   },
   {
@@ -61,6 +68,7 @@ export const sites: Site[] = [
       'Guia digital publicado como site: conteúdo longo organizado em navegação leve, que abre rápido no celular.',
     tags: ['Site de conteúdo', 'Navegação', 'Mobile'],
     url: 'https://anticaos.vercel.app/',
+    slug: 'anticaos',
     label: 'Projeto próprio',
   },
   {
@@ -70,6 +78,7 @@ export const sites: Site[] = [
       'Aplicativo web de foco que roda direto no navegador, sem instalação e com os dados salvos no próprio aparelho.',
     tags: ['Aplicativo web', 'Offline', 'Interface autoral'],
     url: 'https://doroapp.vercel.app/',
+    slug: 'doroapp',
     label: 'Projeto próprio',
   },
   {
@@ -79,6 +88,7 @@ export const sites: Site[] = [
       'Painel de tarefas no estilo quadro visual, com som ambiente integrado — interface própria, sem tema pronto.',
     tags: ['Aplicativo web', 'Kanban', 'Interface autoral'],
     url: 'https://lofi-taskboard.vercel.app/',
+    slug: 'lofi-taskboard',
     label: 'Projeto próprio',
   },
   {
@@ -88,6 +98,7 @@ export const sites: Site[] = [
       'Site de serviços com blog e catálogo de ofertas — sistemas, automação, cursos e criação de sites em uma vitrine só.',
     tags: ['Site de serviços', 'Blog', 'Catálogo', 'Conversão'],
     url: 'https://votechautomacao.vercel.app/',
+    slug: 'votech',
     label: 'Projeto próprio',
   },
 ];
