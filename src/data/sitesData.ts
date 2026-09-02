@@ -3,14 +3,9 @@ export interface Site {
   name: string;
   pitch: string;
   tags: string[];
-  /** Página publicada. Ausente quando o projeto só existe como código. */
-  url?: string;
-  /** Repositório público, usado quando não há página no ar. */
-  repoUrl?: string;
-  /** Rótulo mostrado no card: distingue trabalho de cliente, produto e código sem página. */
-  label: 'Cliente' | 'Projeto próprio' | 'Código no repositório';
-  /** Observação curta quando o link entregue não é exatamente o nome do projeto. */
-  note?: string;
+  url: string;
+  /** Rótulo do card: separa trabalho entregue a cliente de produto próprio. */
+  label: 'Cliente' | 'Projeto próprio';
 }
 
 export const sites: Site[] = [
@@ -52,13 +47,12 @@ export const sites: Site[] = [
   },
   {
     id: 5,
-    name: 'Gato Preto Agro',
+    name: 'Gato Preto',
     pitch:
-      'Página comercial de consultoria para o agronegócio: proposta de valor no topo e caminho curto até o contato.',
-    tags: ['Página comercial', 'Agronegócio', 'Conversão'],
-    url: 'https://gato-preto-agro.vercel.app/',
+      'Página comercial de consultoria: mostra a dor do cliente no topo e leva ao WhatsApp em um clique, sem formulário no caminho.',
+    tags: ['Página comercial', 'Consultoria B2B', 'WhatsApp', 'Conversão'],
+    url: 'https://gatopretoia.vercel.app/',
     label: 'Projeto próprio',
-    note: 'Versão setorial (Agro) do projeto Gato Preto.',
   },
   {
     id: 6,
@@ -91,10 +85,9 @@ export const sites: Site[] = [
     id: 9,
     name: 'Vô Tech',
     pitch:
-      'Catálogo comercial de serviços em várias páginas. Primeira versão, hoje mantida apenas como código-fonte.',
-    tags: ['Catálogo', 'Multi-página', 'HTML/CSS'],
-    repoUrl: 'https://github.com/juliano-ceconi/votech',
-    label: 'Código no repositório',
-    note: 'Sem página publicada no momento.',
+      'Site de serviços com blog e catálogo de ofertas — sistemas, automação, cursos e criação de sites em uma vitrine só.',
+    tags: ['Site de serviços', 'Blog', 'Catálogo', 'Conversão'],
+    url: 'https://votechautomacao.vercel.app/',
+    label: 'Projeto próprio',
   },
 ];

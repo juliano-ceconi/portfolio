@@ -2,17 +2,14 @@ import React from 'react';
 import { Card, CardContent, CardHeader } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
-import { ArrowUpRight, Code2 } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { sites, type Site } from '@/data/sitesData';
 
 const SiteCard = ({ site }: { site: Site }) => {
-  const link = site.url ?? site.repoUrl;
-  const isLive = Boolean(site.url);
-
   return (
     <Card className="flex h-full flex-col">
       <CardHeader className="space-y-2 pb-2">
-        <Badge variant={isLive ? 'secondary' : 'outline'} className="w-fit">
+        <Badge variant="secondary" className="w-fit">
           {site.label}
         </Badge>
         <h3 className="text-xl font-bold leading-tight">{site.name}</h3>
@@ -28,24 +25,12 @@ const SiteCard = ({ site }: { site: Site }) => {
           ))}
         </div>
 
-        {site.note && <p className="text-sm text-muted-foreground/80">{site.note}</p>}
-
         <div className="mt-auto pt-2">
-          {link && (
-            <Button variant={isLive ? 'default' : 'outline'} className="w-full gap-2" asChild>
-              <a href={link} target="_blank" rel="noopener noreferrer">
-                {isLive ? (
-                  <>
-                    Ver site <ArrowUpRight className="h-4 w-4" />
-                  </>
-                ) : (
-                  <>
-                    <Code2 className="h-4 w-4" /> Ver código
-                  </>
-                )}
-              </a>
-            </Button>
-          )}
+          <Button className="w-full gap-2" asChild>
+            <a href={site.url} target="_blank" rel="noopener noreferrer">
+              Ver site <ArrowUpRight className="h-4 w-4" />
+            </a>
+          </Button>
         </div>
       </CardContent>
     </Card>
