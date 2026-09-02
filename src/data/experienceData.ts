@@ -11,12 +11,12 @@ export const jobs: Job[] = [
     company: "Hub Agente IA",
     dates: "2025 - Presente",
     description: [
-      "Fundação e liderança técnica da Hub Agente IA, empresa focada em desenvolvimento de IA e softwares customizáveis. Estruturação de um ecossistema de orquestração de automações e agentes de IA em quatro pilares:",
-      "Automações e Workflows: Orquestração de fluxos integrados no n8n e mensageria via Evolution API (WhatsApp) para atendimento e qualificação inteligente de leads.",
-      "Engenharia de Prompt e RAG: Versionamento de system prompts e gestão de bases de conhecimento vetoriais para agentes autônomos com contexto dinâmico.",
-      "Dados e Infraestrutura: Arquitetura de banco relacional com Supabase/PostgreSQL, cache com Redis e infraestrutura de servidores VPS rodando Docker.",
-      "Sistemas Integrados: Desenvolvimento de aplicações satélites conectadas — interfaces de controle de leads, dashboards operacionais e gestão via API. Criação e incubação interna dos projetos Okam (governança de IA) e Doroapp (gestão de foco cyberpunk) como laboratórios de engenharia da empresa.",
-      "Tecnologias: n8n, Docker, Supabase, PostgreSQL, Redis, Node.js, Evolution API, MCP, RAG, VPS, Python, Google Apps Script."
+      "Fundação e liderança técnica da Hub Agente IA, estruturando soluções de IA aplicada, agentes autônomos e sistemas customizados para pequenas e médias empresas:",
+      "Agentes de IA e Automação B2B: n8n self-hosted com métricas Prometheus, mensageria via Evolution API (WhatsApp), Redis, Supabase/PostgreSQL, pgvector para RAG, MCP, orquestração multi-LLM e central de avaliação de prompts.",
+      "Produto em Produção: CRM desenvolvido para cliente pagante (microlins.hubagenteia.cloud) em React, Vite, Supabase, Vitest, Docker, nginx e deploy automatizado por chave SSH.",
+      "Infraestrutura Self-Hosted: VPS Ubuntu 24.04 com Docker Compose, Traefik com TLS automático, fail2ban, Tailscale, PM2, rotinas de backup e runbooks de monitoramento.",
+      "Laboratórios de Engenharia: Concepção e desenvolvimento interno dos projetos Okam (governança de IA) e Doroapp (gestão de foco gamificada).",
+      "Tecnologias: n8n, Docker, Supabase, PostgreSQL, pgvector, Redis, Traefik, Tailscale, React, Vite, Node.js, Next.js, Prisma, Vitest, Evolution API, MCP, RAG, Python."
     ]
   },
   {
@@ -43,13 +43,14 @@ export const jobs: Job[] = [
     ]
   },
   {
-    title: "Gerente de Operações",
+    title: "Gerente de Operações e Instrutor",
     company: "Microlins",
     dates: "Julho/15 a Julho/17",
     description: [
-      "Liderança da unidade, com responsabilidade direta sobre as equipes pedagógica e comercial, gestão financeira (fluxo de caixa, contas a pagar/receber) e ações de marketing e expansão.",
-      "Identificação e otimização de processos operacionais, com a criação de rotinas padronizadas que aumentaram a eficiência no controle de turmas e na gestão da satisfação dos alunos.",
-      "Responsável pelo ciclo completo de gestão de pessoas, desde o recrutamento e seleção até a capacitação das equipes por meio de treinamentos e palestras técnicas."
+      "Liderança da unidade com gestão completa das equipes pedagógica e comercial, controle financeiro (fluxo de caixa, contas a pagar/receber) e ações de marketing e expansão.",
+      "Ensino e Palestras: Professor de informática para turmas regulares e aulas VIP, e palestrante no ciclo de mercado de trabalho e capacitação profissional da instituição.",
+      "Otimização de processos operacionais com criação de rotinas padronizadas para controle de turmas e acompanhamento da satisfação e retenção de alunos.",
+      "Ciclo completo de gestão de pessoas: recrutamento, seleção e capacitação contínua das equipes por meio de treinamentos técnicos e comportamentais."
     ]
   }
 ];

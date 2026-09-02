@@ -18,7 +18,7 @@ export const education: Education[] = [
   },
   {
     institution: "UTFPR",
-    period: "(Preríodo: agosto de 2010 - junho de 2015)",
+    period: "(Período: agosto de 2010 - junho de 2015)",
     description: [
       "Engenharia Civil, incompleto. Matérias concluídas em destaque: cálculo diferencial e integral I, II e III, física I, II e III, química, fundamentos de programação, metodologia científica, probabilidade e estatística, topografia, desenho técnico, projeto arquitetônico, geometria analítica e álgebra linear."
     ]
