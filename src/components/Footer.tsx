@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, MessageCircle } from 'lucide-react';
 import { Button } from './ui/button';
 import { Separator } from './ui/separator';
 import { footerData } from '../data/footerData';
@@ -13,8 +13,16 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between gap-4 text-center text-sm text-muted-foreground md:flex-row md:text-left">
           <div className="flex gap-4">
             {footerData.socialLinks.map((link) => (
-              <Button key={link.name} variant="outline" size="icon" className="rounded-full">
+              <Button
+                key={link.name}
+                asChild
+                variant="outline"
+                size="icon"
+                className="rounded-full"
+                aria-label={link.name}
+              >
                 <a href={link.url} target="_blank" rel="noopener noreferrer">
+                  {link.icon === 'Whatsapp' && <MessageCircle className="h-5 w-5" />}
                   {link.icon === 'Github' && <Github className="h-5 w-5" />}
                   {link.icon === 'Linkedin' && <Linkedin className="h-5 w-5" />}
                   {link.icon === 'Mail' && <Mail className="h-5 w-5" />}

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Mail, MessageCircle } from 'lucide-react';
 import { heroData } from '../data/heroData';
 
 type Star = {
@@ -127,43 +127,29 @@ const Hero = () => {
         <p className="mb-8 max-w-2xl text-muted-foreground">
           {heroData.description}
         </p>
-        <div className="mb-12 flex space-x-4">
-          <div className="relative group">
-            <Button variant="outline" size="icon" className="rounded-full group-hover:tooltip" aria-label="Github">
-              <a
-                href={heroData.contact.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+        <div className="mb-12 flex flex-col items-center gap-4 sm:flex-row">
+          <Button asChild size="lg" className="rounded-full gap-2">
+            <a href={heroData.contact.whatsapp} target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="h-5 w-5" />
+              Falar no WhatsApp
+            </a>
+          </Button>
+          <div className="flex gap-3">
+            <Button asChild variant="outline" size="lg" className="rounded-full">
+              <a href={heroData.contact.linkedin} target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="icon" className="rounded-full" aria-label="GitHub">
+              <a href={heroData.contact.github} target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
-            <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 hidden group-hover:block bg-black text-white text-xs px-2 py-1 rounded-md shadow-md">
-              Github
-            </span>
-          </div>
-          <Button asChild variant="default" size="lg" className="rounded-full">
-            <a
-              href={heroData.contact.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-            >               
-              LinkedIn
-            </a>
-          </Button>
-          <div className="relative group">
-            <Button variant="outline" size="icon" className="rounded-full group-hover:tooltip" aria-label="Mail">
-              <a
-                href={`mailto:${heroData.contact.email}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <Button asChild variant="outline" size="icon" className="rounded-full" aria-label="Enviar e-mail">
+              <a href={`mailto:${heroData.contact.email}`}>
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
-            <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 hidden group-hover:block bg-black text-white text-xs px-2 py-1 rounded-md shadow-md">
-              email
-            </span>
           </div>
         </div>
         <div className="mb-4 flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">

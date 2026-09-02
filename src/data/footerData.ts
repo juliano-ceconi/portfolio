@@ -1,6 +1,13 @@
+import { heroData } from './heroData';
+
 export const footerData = {
   currentYear: new Date().getFullYear(),
   socialLinks: [
+    {
+      name: 'WhatsApp',
+      url: heroData.contact.whatsapp,
+      icon: 'Whatsapp'
+    },
     {
       name: 'GitHub',
       url: 'https://github.com/juliano-ceconi',
