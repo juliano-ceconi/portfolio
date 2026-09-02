@@ -28,7 +28,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
           <div
             className={`space-y-4 overflow-hidden transition-all duration-500 ease-in-out ${
-              isExpanded ? 'max-h-[1000px]' : 'max-h-0'
+              isExpanded ? 'max-h-[2000px]' : 'max-h-0'
             }`}
           >
             <div className="rounded-lg bg-muted/50 p-4 space-y-4">
@@ -44,11 +44,11 @@ const ProjectCard = ({ project }: { project: Project }) => {
               
               <div>
                 <h4 className="font-semibold mb-2">Impacto</h4>
-                <p className="text-muted-foreground">
+                <ul className="list-disc space-y-1 pl-5 text-muted-foreground">
                   {project.details.impact.map((item, index) => (
                     <li key={index}>{item}</li>
                   ))}
-                </p>
+                </ul>
               </div>
               {project.externalLink && (
                 <Button variant="link" className="flex items-center gap-2 text-md" asChild>
@@ -94,7 +94,7 @@ const PortfolioFeed = () => {
     <section className="relative z-10 min-h-screen bg-background/95 px-4 py-24 backdrop-blur-sm">
       <div className="mx-auto max-w-3xl">
         <h2 className="mb-12 text-center text-4xl font-bold tracking-tight">
-          Projetos & Expertise
+          O que eu faço — e o que já entreguei
         </h2>
         
         <div className="space-y-8">

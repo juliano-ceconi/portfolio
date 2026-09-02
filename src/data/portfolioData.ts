@@ -17,95 +17,117 @@ export interface Project {
     url: string;
   }[];
 }
+
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Consultoria e Implementação de Automação de Processos",
-    summary: "Mapear processos manuais em PMEs (financeiro, administrativo, marketing, etc.). Desenvolver e implementar soluções de automação usando Python, Google Apps Script, Selenium, Google Sheets, etc.. Ex: Automatizar envio de NFs, relatórios financeiros, conciliação bancária, interações com sistemas web.",
-    tags: ["Automação", "Python", "Google Apps Script", "Selenium", "Google Sheets", "Consultoria"],
+    title: "Automação de processos sob medida",
+    summary: "A tarefa repetitiva que hoje come horas da sua equipe — emitir nota fiscal, conciliar banco, montar relatório, cobrar cliente — passa a rodar sozinha. Mapeio o gargalo, construo a automação e deixo funcionando dentro dos sistemas que você já usa.",
+    tags: ["Automação de processos", "n8n", "Python", "Google Apps Script", "Integrações", "PME"],
     details: {
-      challenge: "PMEs onde processos críticos — emissão de NF, conciliação bancária, relatórios financeiros — ainda dependem de digitação manual e planilhas desconexas, gerando horas perdidas e erros recorrentes.",
-      solution: "Mapeamento cirúrgico dos gargalos operacionais, seguido de automação sob medida com Python, Google Apps Script e Selenium — eliminando a dependência de trabalho manual em sistemas legados sem substituí-los.",
+      challenge: "Na maioria das pequenas e médias empresas o processo crítico depende de alguém digitando: nota emitida à mão, conciliação conferida linha a linha, relatório remontado toda semana no mesmo formato. É a hora mais cara da empresa gasta no trabalho mais mecânico dela — e é onde o erro nasce.",
+      solution: "Mapeamento dos gargalos junto com quem executa o processo, e automação sob medida com n8n, Python ou Google Apps Script. A automação conversa com os sistemas que a empresa já tem; não exige trocar de ERP nem mudar a rotina de quem trabalha.",
       impact: [
-        "Redução de ~80% do tempo em processos financeiros críticos.",
-        "Erros operacionais próximos de zero.",
-        "Equipe realocada para análise e decisão, não digitação."
+        "Emissão de notas fiscais automatizada com Python e Selenium na MedPless, operando sobre o próprio sistema web do fornecedor.",
+        "Sistema financeiro completo em Google Sheets e Apps Script: DRE, fluxo de caixa, faturas em PDF, cobrança por WhatsApp e log de auditoria.",
+        "Entrega medida em dias, não em trimestres — cada automação sobe em produção e é validada na operação real antes de fechar."
       ]
     }
   },
   {
     id: 2,
-    title: "Desenvolvimento de Ferramentas de Gestão Personalizadas",
-    summary: "Criar planilhas avançadas e dashboards em Google Sheets/Excel para controle financeiro, de estoque, de clientes, etc.. Desenvolver pequenos sistemas internos ou interfaces com Google Apps Script e HTML/CSS para facilitar tarefas específicas.",
-    tags: ["Google Sheets", "Excel", "Dashboards", "Google Apps Script", "HTML/CSS", "Ferramentas Internas"],
+    title: "Agente de IA que atende no WhatsApp",
+    summary: "Um atendente de IA no seu WhatsApp: responde a qualquer hora, entende o contexto da conversa, consulta a base de conhecimento da empresa, qualifica o interessado e passa para uma pessoa quando a conversa exige.",
+    tags: ["Agentes de IA", "WhatsApp", "n8n", "RAG", "Evolution API", "Supabase", "Docker"],
     details: {
-      challenge: "Soluções de prateleira que não se adaptam às particularidades do negócio, forçando a equipe a conviver com planilhas soltas, controles paralelos e dados descentralizados.",
-      solution: "Sistemas internos e dashboards sob medida em Google Sheets + Apps Script e HTML/CSS, integrando finanças, estoque e operações em uma única camada de gestão funcional.",
+      challenge: "Quem chega fora do horário ou num pico de demanda fica esperando — e quem espera compra do concorrente. Contratar mais gente para o primeiro atendimento é caro, demora a treinar e continua não cobrindo a madrugada nem o fim de semana.",
+      solution: "Ecossistema em quatro camadas, todo em produção na Hub Agente IA: fluxos em n8n orquestrando o ciclo do contato; agentes com RAG consultando base vetorial em pgvector para responder com o conteúdo da própria empresa; MCP integrando as ferramentas; e infraestrutura própria em Docker com Supabase e Redis.",
       impact: [
-        "Visibilidade em tempo real de indicadores sem depender de TI.",
-        "Eliminação de planilhas paralelas e reconciliação manual.",
-        "Decisões baseadas em dados consolidados, não em achismo."
+        "Primeiro atendimento e qualificação funcionando sem intervenção humana, com repasse para pessoa quando o caso pede.",
+        "Respostas ancoradas na base de conhecimento do cliente, não no palpite do modelo.",
+        "Ciclo de engenharia completo: escrita do prompt, avaliação, publicação e observabilidade, com métricas Prometheus no n8n self-host.",
+        "Orquestração multi-LLM: trocar o modelo de IA não obriga a reescrever o atendimento."
       ]
     }
   },
   {
     id: 3,
-    title: "Treinamentos e Workshops",
-    summary: "Capacitar equipes e profissionais em Excel/Google Sheets avançado, ferramentas de automação e Inteligência Artificial",
-    tags: ["Treinamento", "Excel", "Google Sheets", "Capacitação", "Automação", "IA", "Workshop", "RPA"],
+    title: "Criação de sites e landing pages",
+    summary: "Site institucional, página de venda ou landing page de campanha: construídos do zero, publicados com domínio e HTTPS, rápidos no celular e ligados ao seu WhatsApp. Não paro no protótipo — a página vai ao ar.",
+    tags: ["Sites", "Landing pages", "React", "Vite", "Astro", "Publicação e domínio"],
     details: {
-      challenge: "Profissionais que dominam o básico de Excel e Sheets mas subutilizam ferramentas avançadas e IA — perdendo horas em tarefas que poderiam ser automatizadas em minutos.",
-      solution: "Workshops práticos e diretos ao ponto: Excel/Sheets avançado, automação com Apps Script e aplicação estratégica de IA no dia a dia — conteúdo que gera resultado na semana seguinte.",
+      challenge: "Empresa sem site perde o cliente que pesquisa antes de ligar. E site que existe mas não diz em poucos segundos o que a empresa vende, ou que trava no celular, perde do mesmo jeito — com o agravante de já ter custado dinheiro.",
+      solution: "Página construída sob medida, com o texto escrito para quem compra e não para quem programa, publicada com domínio próprio, certificado de segurança e carregamento rápido. Quando faz sentido, já sai integrada ao WhatsApp, a formulário e ao atendimento automático.",
       impact: [
-        "Equipe capacitada a criar e manter suas próprias automações.",
-        "Redução da dependência de suporte externo.",
-        "ROI máximo das ferramentas que a empresa já possui."
+        "Nove páginas no ar hoje — a vitrine no topo desta página é o inventário completo, e cada card leva ao site publicado.",
+        "Publicação, domínio e HTTPS fazem parte da entrega; o cliente recebe o endereço funcionando, não um arquivo.",
+        "Mesma base técnica dos sistemas: a página pode crescer para área logada, catálogo ou painel sem ser refeita do zero."
       ]
     }
   },
   {
     id: 4,
-    title: "Consultoria para Otimização de Fluxos de Trabalho com Foco Tecnológico",
-    summary: "Analisar o fluxo de trabalho atual da empresa e propor melhorias usando tecnologia, ou seja, encontrar gargalos operacionais e construir soluções inteligentes para cada um.",
-    tags: ["Consultoria", "Otimização de Processos", "Tecnologia", "Gargalos Operacionais", "Soluções Inteligentes"],
+    title: "Sistema de gestão sob medida (CRM, painel, controle interno)",
+    summary: "Quando nenhuma ferramenta de prateleira encaixa e a empresa vive de planilha paralela, construo o sistema que atende exatamente o processo dela — com acesso por usuário, dados centralizados e publicação em produção.",
+    tags: ["React 19", "Vite", "Supabase", "PostgreSQL", "Vitest", "Docker", "nginx"],
     details: {
-      challenge: "Empresas em crescimento que ainda operam com processos artesanais — sem métricas claras de onde estão os gargalos nem quanto custam.",
-      solution: "Auditoria objetiva dos fluxos de trabalho: mapeamento de tempos, identificação de gargalos com dados reais e priorização de intervenções por impacto vs. esforço.",
+      challenge: "Controle espalhado por planilhas soltas, cada setor com a sua versão da verdade e ninguém sabendo qual número está certo na hora de decidir. Trocar por um sistema pronto costuma significar pagar por muito recurso inútil e ainda assim não cobrir a particularidade que importa.",
+      solution: "Aplicação web sob medida em React 19 com Vite e banco Supabase/PostgreSQL, com testes automatizados em Vitest, verificação de código, empacotamento em Docker e publicação com nginx. Deploy versionado e runbook de operação escritos junto com o sistema.",
       impact: [
-        "Gargalos eliminados na ordem certa — o que mais dói primeiro.",
-        "Fluxos redesenhados com a tecnologia certa para cada caso.",
-        "Crescimento sem aumento proporcional de custo operacional."
+        "CRM em produção para cliente pagante da Microlins, em uso na rotina comercial (microlins.hubagenteia.cloud).",
+        "Base de dados única no lugar das planilhas paralelas, com histórico e controle de acesso por usuário.",
+        "O sistema é do cliente: código, banco e servidor ficam sob o controle dele, sem mensalidade por usuário."
       ]
     }
   },
   {
     id: 5,
-    title: "Orquestração de Agentes de IA e Automações Inteligentes",
-    summary: "Projetar e implementar ecossistema completo de agentes de IA e automações na Hub Agente IA, integrando n8n, RAG, MCP, WhatsApp via Evolution API e múltiplos sistemas conectados.",
-    tags: ["n8n", "RAG", "MCP", "Docker", "Supabase", "Node.js", "Evolution API", "Redis", "VPS"],
+    title: "Treinamento e workshop de IA aplicada ao negócio",
+    summary: "Workshop prático para a equipe usar IA no trabalho de verdade — não teoria, não demonstração de ferramenta. Sai de lá sabendo aplicar no processo que já executa e mantendo sozinha o que foi construído.",
+    tags: ["Treinamento", "Workshop", "IA aplicada", "Automação", "Excel e Google Sheets", "In-company"],
     details: {
-      challenge: "Atendimento e qualificação de leads 100% manuais, sem escala — cada interação consumia tempo da equipe e o conhecimento sobre produtos e processos estava fragmentado em dezenas de fontes.",
-      solution: "Ecossistema integrado em quatro camadas: workflows n8n orquestrando o ciclo completo de lead nurturing e mensageria; agentes com RAG consultando bases vetoriais para respostas contextuais; MCP como camada de integração entre ferramentas; infraestrutura Docker em VPS com Supabase e Redis garantindo disponibilidade e baixo custo.",
+      challenge: "A equipe ouve falar de IA todos os dias e não sabe onde encostar no próprio trabalho. Resultado: ou ninguém usa, ou cada um usa do seu jeito, sem critério e sem clareza sobre o que pode ou não sair de dentro de casa.",
+      solution: "Conteúdo montado sobre o processo real da empresa: onde a IA e a automação cabem, onde não cabem, o que pode ser enviado para uma ferramenta de terceiro e como manter o que foi criado. Formato de meio dia ou trilha in-company.",
       impact: [
-        "Atendimento e qualificação de leads 24/7 sem intervenção humana (MIA).",
-        "Agentes que entendem contexto, não só palavras-chave — com memória e base de conhecimento vetorial.",
-        "Infraestrutura que escala sob demanda sem estourar o orçamento.",
-        "Ecossistema aberto via MCP para conectar novas ferramentas sem retrabalho."
+        "Experiência de sala: professor de informática (turma e VIP) e palestrante no ciclo de mercado de trabalho da Microlins.",
+        "Plataforma de curso própria em produção — a Juliano Ceconi Academy, com portal do aluno e player de aula.",
+        "A equipe passa a criar e manter as próprias automações, reduzindo a dependência de suporte externo."
+      ]
+    },
+    links: [
+      {
+        title: "Visualizar a plataforma de curso",
+        url: "https://academy.zanettin.cloud"
+      }
+    ]
+  },
+  {
+    id: 6,
+    title: "Infraestrutura própria, segura e sob seu controle",
+    summary: "Servidor, publicação, segurança e backup do que é construído. O sistema roda em infraestrutura própria, com custo previsível de servidor no lugar de mensalidade por usuário — e quem cuida disso é a mesma pessoa que escreveu o sistema.",
+    tags: ["VPS", "Docker", "Traefik", "TLS", "fail2ban", "Tailscale", "Backup", "PM2"],
+    details: {
+      challenge: "Sistema entregue sem quem opere o servidor vira problema do cliente no primeiro incidente. E a alternativa comum — empilhar assinaturas de plataforma — transforma custo variável em despesa que cresce sozinha junto com a equipe.",
+      solution: "Operação self-hosted completa em VPS Ubuntu 24.04: Docker e Docker Compose, Traefik publicando os serviços com certificado TLS, fail2ban bloqueando tentativa de invasão, firewall fechando o acesso administrativo público, administração remota por rede privada Tailscale e processos gerenciados com PM2.",
+      impact: [
+        "Vários serviços em produção no mesmo servidor, cada um com endereço e certificado próprios.",
+        "Backup, restauração e monitoramento com runbook escrito — o procedimento existe antes do incidente.",
+        "Acesso administrativo fora da internet pública: porta de administração fechada, entrada apenas pela rede privada."
       ]
     }
   },
   {
-    id: 6,
-    title: "Okam - Governança e Memória para IA",
-    summary: "Framework open-source desenvolvido para resolver a falta de memória persistente e consistência de comportamento em agentes de IA. Automatiza a governança através de hooks nativos do Git e estrutura bases de conhecimento locais no padrão OKF.",
-    tags: ["Open Source", "Python", "Git Hooks", "Governança de IA", "CLI", "YAML/Markdown"],
+    id: 7,
+    title: "Okam — governança e memória para agentes de IA",
+    summary: "Projeto open-source que resolve a falta de memória e de consistência dos assistentes de IA em projetos de software. Instala verificações automáticas no Git e organiza a base de conhecimento local do projeto.",
+    tags: ["Open Source", "Python", "Git Hooks", "Governança de IA", "CLI", "Markdown"],
     details: {
-      challenge: "Agentes de IA e copilots iniciam cada sessão do zero, sem contexto sobre regras arquiteturais ou decisões passadas, gerando retrabalho e inconsistências.",
-      solution: "Criação de um CLI em Python sem dependências externas que instala hooks nativos do Git (pre-commit/push) para validação estrutural e detecção de segredos, e viabiliza a manutenção de uma LLM Wiki de contexto persistente.",
+      challenge: "Assistentes de IA começam cada sessão do zero, sem lembrar das regras do projeto nem das decisões já tomadas — o que gera retrabalho e código fora do padrão combinado.",
+      solution: "CLI em Python sem dependências externas que instala verificações nativas do Git (antes do commit e do push) para checagem estrutural e detecção de segredos, e mantém uma base de conhecimento persistente do projeto em formato aberto.",
       impact: [
-        "Prevenção contra o vazamento de segredos/chaves de API no commit.",
-        "Garantia de consistência das regras de codificação compartilhadas em meta-repositórios.",
-        "Integração contínua da inteligência do projeto no ciclo de vida de desenvolvimento."
+        "Bloqueia o envio acidental de senha ou chave de API para o repositório.",
+        "Mantém as regras de código consistentes entre projetos que compartilham o mesmo repositório-mãe.",
+        "O contexto do projeto passa a viver em arquivo versionado, não na memória de uma sessão."
       ]
     },
     links: [
@@ -120,17 +142,17 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 7,
-    title: "Doroapp - Protocolo Deep Focus",
-    summary: "Aplicativo gamificado de gerenciamento de tempo e foco absoluto (Pomodoro) com estética cyberpunk retro-futurista. Projetado especificamente para desenvolvedores e otimizado com mecânicas de RPG.",
-    tags: ["Frontend", "Vanilla JavaScript", "CSS3", "Gamificação", "Web App", "LocalStorage"],
+    id: 8,
+    title: "Doroapp — protocolo Deep Focus",
+    summary: "Aplicativo próprio de foco e gestão de tempo, com estética cyberpunk e mecânicas de jogo. Feito para sustentar blocos longos de concentração — e usado por mim diariamente.",
+    tags: ["Frontend", "JavaScript", "CSS3", "Gamificação", "Web App", "Armazenamento local"],
     details: {
-      challenge: "Procrastinação e falta de engajamento no foco prolongado de codificação usando ferramentas de produtividade convencionais.",
-      solution: "Construção de uma SPA de alta performance (Zero Dependency) com sistema de progressão de 50 níveis, ganho de XP em tempo real, console CLI integrado para controle de tempos e presets, e efeitos visuais CRT/glitch.",
+      challenge: "Ferramentas convencionais de produtividade não sustentam foco prolongado: marcam o tempo, mas não dão nenhum motivo para voltar no dia seguinte.",
+      solution: "Aplicação de página única sem dependências externas, com progressão de 50 níveis, ganho de experiência a cada ciclo concluído, console de comandos para controlar tempos e predefinições, e efeitos visuais de terminal.",
       impact: [
-        "Aumento expressivo no tempo de foco concentrado via gamificação de tarefas.",
-        "Carregamento ultra-rápido e persistência de dados localmente (streaks, XP) resiliente.",
-        "Experiência de uso engajante inspirada na estética do terminal da Matrix."
+        "Progressão de 50 níveis e registro de sequência mantidos no próprio navegador, sem cadastro e sem servidor.",
+        "Carregamento imediato por não depender de biblioteca externa.",
+        "Em uso diário — a captura na vitrine acima é a tela real de operação."
       ]
     },
     links: [
