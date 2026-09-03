@@ -14,20 +14,6 @@ import { config } from '../data/config';
 ---
 
 <Layout title={config.siteTitle}>
-  <head>
-    <meta name="description" content={config.description} />
-    <meta name="keywords" content={config.keywords} />
-    <link rel="icon" href={config.favicon} />
-    <meta property="og:title" content={config.siteTitle} />
-    <meta property="og:description" content={config.description} />
-    <meta property="og:image" content="/path/to/image.jpg" />
-    <meta property="og:url" content="https://yourwebsite.com" />
-    <meta name="twitter:card" content="summary_large_image" />
-    {/* <meta name="twitter:site" content={config.social.twitter} /> */}
-    <meta name="twitter:title" content={config.siteTitle} />
-    <meta name="twitter:description" content={config.description} />
-    <meta name="twitter:image" content="/path/to/image.jpg" />
-  </head>
   <main class="min-h-screen bg-background">
     <div class="fixed top-4 right-4 z-50">
       <Button variant="outline" size="icon" className="rounded-full" id="theme-toggle">
