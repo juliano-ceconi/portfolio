@@ -24,9 +24,9 @@ export const jobs: Job[] = [
     company: "MedPless Assist",
     dates: "Maio/24 a Junho/25",
     description: [
-      "Liderei a modernização e automação de processos financeiros e de TI críticos, transformando operações manuais em sistemas orientados por dados — reduzindo erros e liberando a equipe para atividades de maior valor.",
+      "Liderei a modernização e automação de processos financeiros e de TI críticos, transformando operações manuais em sistemas orientados por dados para reduzir erros e liberar a equipe para atividades de maior valor.",
       "Automação de NF em Python: solução completa que eliminou o processamento manual de notas fiscais, com redução drástica de tempo e erros.",
-      "Sistema Financeiro Integrado (Google Sheets + Apps Script + Twilio): dashboards em tempo real, fluxo de caixa, faturas em PDF automáticas, notificações via WhatsApp e geração de DRE — tudo em um ecossistema rastreável e auditável.",
+      "Sistema Financeiro Integrado (Google Sheets + Apps Script + Twilio): dashboards em tempo real, fluxo de caixa, faturas em PDF automáticas, notificações via WhatsApp e geração de DRE em um ecossistema rastreável e auditável.",
       "Gestão de relacionamento com ~80 clínicas, laboratórios e hospitais + 20 profissionais da saúde, responsável por todo o ciclo de faturamento e repasses.",
       "Tecnologias: Python, Google Apps Script, Google Sheets/Excel, APIs, Twilio, RPA."
     ]

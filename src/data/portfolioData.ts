@@ -22,15 +22,15 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "Automação de processos sob medida",
-    summary: "A tarefa repetitiva que hoje come horas da sua equipe — emitir nota fiscal, conciliar banco, montar relatório, cobrar cliente — passa a rodar sozinha. Mapeio o gargalo, construo a automação e deixo funcionando dentro dos sistemas que você já usa.",
+    summary: "A tarefa repetitiva que hoje consome horas da sua equipe (emitir nota fiscal, conciliar banco, montar relatório ou cobrar cliente) passa a rodar sozinha. Mapeio o gargalo, construo a automação e deixo funcionando dentro dos sistemas que você já usa.",
     tags: ["Automação de processos", "n8n", "Python", "Google Apps Script", "Integrações", "PME"],
     details: {
-      challenge: "Na maioria das pequenas e médias empresas o processo crítico depende de alguém digitando: nota emitida à mão, conciliação conferida linha a linha, relatório remontado toda semana no mesmo formato. É a hora mais cara da empresa gasta no trabalho mais mecânico dela — e é onde o erro nasce.",
+      challenge: "Na maioria das pequenas e médias empresas o processo crítico depende de alguém digitando: nota emitida à mão, conciliação conferida linha a linha, relatório remontado toda semana no mesmo formato. É a hora mais cara da empresa gasta no trabalho mais mecânico dela, onde os erros costumam nascer.",
       solution: "Mapeamento dos gargalos junto com quem executa o processo, e automação sob medida com n8n, Python ou Google Apps Script. A automação conversa com os sistemas que a empresa já tem; não exige trocar de ERP nem mudar a rotina de quem trabalha.",
       impact: [
         "Emissão de notas fiscais automatizada com Python e Selenium na MedPless, operando sobre o próprio sistema web do fornecedor.",
         "Sistema financeiro completo em Google Sheets e Apps Script: DRE, fluxo de caixa, faturas em PDF, cobrança por WhatsApp e log de auditoria.",
-        "Entrega medida em dias, não em trimestres — cada automação sobe em produção e é validada na operação real antes de fechar."
+        "Entrega medida em dias, não em trimestres. Cada automação sobe em produção e é validada na operação real antes de fechar."
       ]
     }
   },
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     summary: "Um atendente de IA no seu WhatsApp: responde a qualquer hora, entende o contexto da conversa, consulta a base de conhecimento da empresa, qualifica o interessado e passa para uma pessoa quando a conversa exige.",
     tags: ["Agentes de IA", "WhatsApp", "n8n", "RAG", "Evolution API", "Supabase", "Docker"],
     details: {
-      challenge: "Quem chega fora do horário ou num pico de demanda fica esperando — e quem espera compra do concorrente. Contratar mais gente para o primeiro atendimento é caro, demora a treinar e continua não cobrindo a madrugada nem o fim de semana.",
+      challenge: "Quem chega fora do horário ou num pico de demanda fica esperando, e quem espera compra do concorrente. Contratar mais gente para o primeiro atendimento é caro, demora para treinar e continua não cobrindo a madrugada nem o fim de semana.",
       solution: "Ecossistema em quatro camadas, todo em produção na Hub Agente IA: fluxos em n8n orquestrando o ciclo do contato; agentes com RAG consultando base vetorial em pgvector para responder com o conteúdo da própria empresa; MCP integrando as ferramentas; e infraestrutura própria em Docker com Supabase e Redis.",
       impact: [
         "Primeiro atendimento e qualificação funcionando sem intervenção humana, com repasse para pessoa quando o caso pede.",
@@ -53,13 +53,13 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "Criação de sites e landing pages",
-    summary: "Site institucional, página de venda ou landing page de campanha: construídos do zero, publicados com domínio e HTTPS, rápidos no celular e ligados ao seu WhatsApp. Não paro no protótipo — a página vai ao ar.",
+    summary: "Site institucional, página de venda ou landing page de campanha: construídos do zero, publicados com domínio e HTTPS, rápidos no celular e ligados ao seu WhatsApp. Não fico apenas no protótipo, a página é entregue no ar.",
     tags: ["Sites", "Landing pages", "React", "Vite", "Astro", "Publicação e domínio"],
     details: {
-      challenge: "Empresa sem site perde o cliente que pesquisa antes de ligar. E site que existe mas não diz em poucos segundos o que a empresa vende, ou que trava no celular, perde do mesmo jeito — com o agravante de já ter custado dinheiro.",
+      challenge: "Empresa sem site perde o cliente que pesquisa antes de ligar. E o site que não explica em poucos segundos o que a empresa vende, ou que trava no celular, perde do mesmo jeito, com o agravante de já ter custado dinheiro.",
       solution: "Página construída sob medida, com o texto escrito para quem compra e não para quem programa, publicada com domínio próprio, certificado de segurança e carregamento rápido. Quando faz sentido, já sai integrada ao WhatsApp, a formulário e ao atendimento automático.",
       impact: [
-        "Nove páginas no ar hoje — a vitrine no topo desta página é o inventário completo, e cada card leva ao site publicado.",
+        "Nove projetos no ar hoje: a vitrine no topo desta página reúne os trabalhos, e cada card leva ao site publicado.",
         "Publicação, domínio e HTTPS fazem parte da entrega; o cliente recebe o endereço funcionando, não um arquivo.",
         "Mesma base técnica dos sistemas: a página pode crescer para área logada, catálogo ou painel sem ser refeita do zero."
       ]
@@ -68,7 +68,7 @@ export const projects: Project[] = [
   {
     id: 4,
     title: "Sistema de gestão sob medida (CRM, painel, controle interno)",
-    summary: "Quando nenhuma ferramenta de prateleira encaixa e a empresa vive de planilha paralela, construo o sistema que atende exatamente o processo dela — com acesso por usuário, dados centralizados e publicação em produção.",
+    summary: "Quando nenhuma ferramenta de prateleira encaixa e a empresa vive de planilha paralela, construo o sistema que atende exatamente o processo dela, com controle de acesso por usuário, dados centralizados e publicação em produção.",
     tags: ["React 19", "Vite", "Supabase", "PostgreSQL", "Vitest", "Docker", "nginx"],
     details: {
       challenge: "Controle espalhado por planilhas soltas, cada setor com a sua versão da verdade e ninguém sabendo qual número está certo na hora de decidir. Trocar por um sistema pronto costuma significar pagar por muito recurso inútil e ainda assim não cobrir a particularidade que importa.",
@@ -82,15 +82,30 @@ export const projects: Project[] = [
   },
   {
     id: 5,
+    title: "Gestão e automação financeira",
+    summary: "Estruturação de rotinas financeiras, fluxo de caixa em tempo real, conciliação e cobrança automática. Acabo com a gestão no escuro e com o retrabalho manual em planilhas desencontradas.",
+    tags: ["Gestão financeira", "Fluxo de caixa", "DRE gerencial", "Cobrança automática", "Conciliação bancária", "PME"],
+    details: {
+      challenge: "Muitas empresas operam sem clareza real sobre suas margens: cobranças atrasam por falta de acompanhamento, a conciliação consome horas de conferência manual e o fechamento do mês vira uma incógnita. O gestor gasta energia apagando incêndio operacional em vez de tomar decisões com números confiáveis.",
+      solution: "Organização prática do setor financeiro aliada à automação. Implantação de controle de fluxo de caixa, conciliação ágil, réguas de cobrança automatizadas e demonstrativos (DRE) que revelam o resultado real da operação.",
+      impact: [
+        "Ecossistema financeiro integrado com geração automática de faturas em PDF, DRE gerencial e avisos de cobrança pelo WhatsApp.",
+        "Redução do tempo gasto com conciliação bancária e emissão manual de notas fiscais.",
+        "Visão clara de caixa e previsibilidade de recebimentos para tomada de decisão fundamentada."
+      ]
+    }
+  },
+  {
+    id: 6,
     title: "Treinamento e workshop de IA aplicada ao negócio",
-    summary: "Workshop prático para a equipe usar IA no trabalho de verdade — não teoria, não demonstração de ferramenta. Sai de lá sabendo aplicar no processo que já executa e mantendo sozinha o que foi construído.",
+    summary: "Workshop prático para a equipe usar IA no trabalho do dia a dia, focado em prática e sem teoria desnecessária. O time aprende a aplicar no próprio processo e a manter o que foi construído.",
     tags: ["Treinamento", "Workshop", "IA aplicada", "Automação", "Excel e Google Sheets", "In-company"],
     details: {
       challenge: "A equipe ouve falar de IA todos os dias e não sabe onde encostar no próprio trabalho. Resultado: ou ninguém usa, ou cada um usa do seu jeito, sem critério e sem clareza sobre o que pode ou não sair de dentro de casa.",
       solution: "Conteúdo montado sobre o processo real da empresa: onde a IA e a automação cabem, onde não cabem, o que pode ser enviado para uma ferramenta de terceiro e como manter o que foi criado. Formato de meio dia ou trilha in-company.",
       impact: [
         "Experiência de sala: professor de informática (turma e VIP) e palestrante no ciclo de mercado de trabalho da Microlins.",
-        "Plataforma de curso própria em produção — a Juliano Ceconi Academy, com portal do aluno e player de aula.",
+        "Plataforma de curso própria em produção: a Juliano Ceconi Academy, com portal do aluno e player de aula.",
         "A equipe passa a criar e manter as próprias automações, reduzindo a dependência de suporte externo."
       ]
     },
@@ -102,68 +117,18 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     title: "Infraestrutura própria, segura e sob seu controle",
-    summary: "Servidor, publicação, segurança e backup do que é construído. O sistema roda em infraestrutura própria, com custo previsível de servidor no lugar de mensalidade por usuário — e quem cuida disso é a mesma pessoa que escreveu o sistema.",
+    summary: "Servidor, publicação, segurança e backup do que é construído. O sistema roda em infraestrutura própria, com custo previsível de servidor no lugar de mensalidade por usuário, sob os cuidados de quem desenvolveu a solução.",
     tags: ["VPS", "Docker", "Traefik", "TLS", "fail2ban", "Tailscale", "Backup", "PM2"],
     details: {
-      challenge: "Sistema entregue sem quem opere o servidor vira problema do cliente no primeiro incidente. E a alternativa comum — empilhar assinaturas de plataforma — transforma custo variável em despesa que cresce sozinha junto com a equipe.",
+      challenge: "Sistema entregue sem quem opere o servidor vira problema do cliente no primeiro incidente. E a alternativa comum de empilhar assinaturas de plataformas terceiras transforma custo variável em despesa que cresce sem controle.",
       solution: "Operação self-hosted completa em VPS Ubuntu 24.04: Docker e Docker Compose, Traefik publicando os serviços com certificado TLS, fail2ban bloqueando tentativa de invasão, firewall fechando o acesso administrativo público, administração remota por rede privada Tailscale e processos gerenciados com PM2.",
       impact: [
         "Vários serviços em produção no mesmo servidor, cada um com endereço e certificado próprios.",
-        "Backup, restauração e monitoramento com runbook escrito — o procedimento existe antes do incidente.",
+        "Backup, restauração e monitoramento com documentação operacional prática, garantindo procedimentos definidos antes de qualquer incidente.",
         "Acesso administrativo fora da internet pública: porta de administração fechada, entrada apenas pela rede privada."
       ]
     }
-  },
-  {
-    id: 7,
-    title: "Okam — governança e memória para agentes de IA",
-    summary: "Projeto open-source que resolve a falta de memória e de consistência dos assistentes de IA em projetos de software. Instala verificações automáticas no Git e organiza a base de conhecimento local do projeto.",
-    tags: ["Open Source", "Python", "Git Hooks", "Governança de IA", "CLI", "Markdown"],
-    details: {
-      challenge: "Assistentes de IA começam cada sessão do zero, sem lembrar das regras do projeto nem das decisões já tomadas — o que gera retrabalho e código fora do padrão combinado.",
-      solution: "CLI em Python sem dependências externas que instala verificações nativas do Git (antes do commit e do push) para checagem estrutural e detecção de segredos, e mantém uma base de conhecimento persistente do projeto em formato aberto.",
-      impact: [
-        "Bloqueia o envio acidental de senha ou chave de API para o repositório.",
-        "Mantém as regras de código consistentes entre projetos que compartilham o mesmo repositório-mãe.",
-        "O contexto do projeto passa a viver em arquivo versionado, não na memória de uma sessão."
-      ]
-    },
-    links: [
-      {
-        title: "Visualizar Página",
-        url: "https://okam-os.vercel.app/"
-      },
-      {
-        title: "Repositório GitHub",
-        url: "https://github.com/juliano-ceconi/okam"
-      }
-    ]
-  },
-  {
-    id: 8,
-    title: "Doroapp — protocolo Deep Focus",
-    summary: "Aplicativo próprio de foco e gestão de tempo, com estética cyberpunk e mecânicas de jogo. Feito para sustentar blocos longos de concentração — e usado por mim diariamente.",
-    tags: ["Frontend", "JavaScript", "CSS3", "Gamificação", "Web App", "Armazenamento local"],
-    details: {
-      challenge: "Ferramentas convencionais de produtividade não sustentam foco prolongado: marcam o tempo, mas não dão nenhum motivo para voltar no dia seguinte.",
-      solution: "Aplicação de página única sem dependências externas, com progressão de 50 níveis, ganho de experiência a cada ciclo concluído, console de comandos para controlar tempos e predefinições, e efeitos visuais de terminal.",
-      impact: [
-        "Progressão de 50 níveis e registro de sequência mantidos no próprio navegador, sem cadastro e sem servidor.",
-        "Carregamento imediato por não depender de biblioteca externa.",
-        "Em uso diário — a captura na vitrine acima é a tela real de operação."
-      ]
-    },
-    links: [
-      {
-        title: "Visualizar Página",
-        url: "https://doroapp.vercel.app/"
-      },
-      {
-        title: "Repositório GitHub",
-        url: "https://github.com/juliano-ceconi/doroapp"
-      }
-    ]
   }
 ];

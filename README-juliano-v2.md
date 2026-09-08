@@ -2,7 +2,7 @@
 
 ### 🚀 Perfil Profissional
 
-Profissional com forte visão sistêmica, unindo sólida experiência em gestão de negócios e liderança de equipes à automação avançada e desenvolvimento de Agentes de Inteligência Artificial para o mercado B2B. Atua de ponta a ponta — da arquitetura da infraestrutura (Self-Hosted) à entrega da interface final ao usuário. Possui perfil altamente analítico ("fail fast") e foco em produtividade, desenvolvendo ecossistemas tecnológicos que reduzem custos operacionais, otimizam o tempo e entregam valor real e mensurável para as empresas.
+Profissional com forte visão sistêmica, unindo sólida experiência em gestão de negócios e liderança de equipes à automação avançada e desenvolvimento de Agentes de Inteligência Artificial para o mercado B2B. Atua de ponta a ponta, da arquitetura da infraestrutura (Self-Hosted) à entrega da interface final ao usuário. Possui perfil altamente analítico ("fail fast") e foco em produtividade, desenvolvendo ecossistemas tecnológicos que reduzem custos operacionais, otimizam o tempo e entregam valor real e mensurável para as empresas.
 
 ### 📈 Experiência Profissional & Projetos em Destaque
 

@@ -25,7 +25,7 @@ export const sites: Site[] = [
     id: 2,
     name: 'Juliano Ceconi Academy',
     pitch:
-      'Plataforma de cursos completa, com área de aluno, vídeo e acompanhamento de progresso — hospedada em servidor próprio.',
+      'Plataforma de cursos completa, com área de aluno, vídeo e acompanhamento de progresso, hospedada em servidor próprio.',
     tags: ['Plataforma de cursos', 'Área de aluno', 'React', 'Servidor próprio'],
     url: 'https://academy.zanettin.cloud',
     slug: 'academy',
@@ -63,7 +63,7 @@ export const sites: Site[] = [
   },
   {
     id: 6,
-    name: 'Tia Mimi — Hospedagem e Creche Canina',
+    name: 'Tia Mimi: Hospedagem e Creche Canina',
     pitch:
       'Site de negócio local que transforma visita em conversa: contato direto no WhatsApp, tabela de serviços e presença no Google Maps.',
     tags: ['Landing page', 'SEO local', 'WhatsApp', 'Responsivo'],
@@ -75,7 +75,7 @@ export const sites: Site[] = [
     id: 7,
     name: 'Vô Tech',
     pitch:
-      'Site de serviços com blog e catálogo de ofertas — sistemas, automação, cursos e criação de sites em uma vitrine só.',
+      'Site de serviços com blog e catálogo de ofertas reunindo sistemas, automação, cursos e criação de sites em uma vitrine só.',
     tags: ['Site de serviços', 'Blog', 'Catálogo', 'Conversão'],
     url: 'https://votechautomacao.vercel.app/',
     slug: 'votech',

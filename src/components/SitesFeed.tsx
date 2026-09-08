@@ -53,8 +53,8 @@ const SitesFeed = () => {
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="text-4xl font-bold tracking-tight">Trabalhos reais</h2>
           <p className="mt-4 text-muted-foreground">
-            Do site de um negócio local até plataforma com área de aluno. Todos no ar, todos feitos
-            do zero — sem tema pronto.
+            Do site de um negócio local até plataforma com área de aluno. Todos no ar, desenvolvidos
+            do zero e sem temas prontos.
           </p>
         </div>
 

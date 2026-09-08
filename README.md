@@ -9,7 +9,7 @@
 
 ## 💡 Sobre Mim
 
-Sou um Gestor e Desenvolvedor com sólida experiência em administração de negócios. Com um histórico único que vai desde a gestão em empresas de saúde — atuando como sócio-administrador desde a planta até a venda do negócio — até a programação avançada, possuo uma visão privilegiada de como a tecnologia deve servir aos objetivos estratégicos de uma empresa.
+Sou um Gestor e Desenvolvedor com sólida experiência em administração de negócios. Com um histórico único que vai desde a gestão em empresas de saúde (atuando como sócio-administrador desde a planta até a venda do negócio) até a programação avançada, possuo uma visão privilegiada de como a tecnologia deve servir aos objetivos estratégicos de uma empresa.
 
 Minha especialidade é **encontrar gargalos operacionais e construir soluções inteligentes** (utilizando Google Apps Script, Python, Excel e Inteligência Artificial) para otimizar tempo, reduzir custos e melhorar a precisão dos dados, permitindo que as equipes foquem no que realmente traz resultado.
 

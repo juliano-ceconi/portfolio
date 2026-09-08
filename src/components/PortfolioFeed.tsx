@@ -94,7 +94,7 @@ const PortfolioFeed = () => {
     <section className="relative z-10 min-h-screen bg-background/95 px-4 py-24 backdrop-blur-sm">
       <div className="mx-auto max-w-3xl">
         <h2 className="mb-12 text-center text-4xl font-bold tracking-tight">
-          O que eu faço — e o que já entreguei
+          O que eu faço
         </h2>
         
         <div className="space-y-8">

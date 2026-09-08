@@ -89,7 +89,7 @@ def main() -> None:
 
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
     img.save(SAIDA, "PNG", optimize=True)
-    print(f"{SAIDA.relative_to(RAIZ)} — {LARGURA}x{ALTURA}, {SAIDA.stat().st_size} bytes")
+    print(f"{SAIDA.relative_to(RAIZ)}: {LARGURA}x{ALTURA}, {SAIDA.stat().st_size} bytes")
 
 
 if __name__ == "__main__":

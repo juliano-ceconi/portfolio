@@ -1,6 +1,6 @@
 export const config = {
   siteUrl: 'https://julianoceconi.vercel.app',
-  siteTitle: 'Juliano Ceconi — Automação, agentes de IA e sites para PME',
+  siteTitle: 'Juliano Ceconi | Automação, agentes de IA e sites para PME',
   description:
     'Automação de processos, agentes de IA que atendem no WhatsApp, sistemas de gestão sob medida e criação de sites para pequenas e médias empresas. Do desenho à produção, sem repassar para terceiros.',
   author: 'Juliano Ceconi',
