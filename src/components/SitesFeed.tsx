@@ -51,7 +51,7 @@ const SitesFeed = () => {
     <section id="sites" className="relative z-10 bg-background/95 px-4 py-24 backdrop-blur-sm">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto mb-12 max-w-2xl text-center">
-          <h2 className="text-4xl font-bold tracking-tight">Sites e páginas que eu construí</h2>
+          <h2 className="text-4xl font-bold tracking-tight">Trabalhos reais</h2>
           <p className="mt-4 text-muted-foreground">
             Do site de um negócio local até plataforma com área de aluno. Todos no ar, todos feitos
             do zero — sem tema pronto.
