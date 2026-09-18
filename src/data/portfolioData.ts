@@ -28,7 +28,7 @@ export const projects: Project[] = [
       challenge: "Na maioria das pequenas e médias empresas o processo crítico depende de alguém digitando: nota emitida à mão, conciliação conferida linha a linha, relatório remontado toda semana no mesmo formato. É a hora mais cara da empresa gasta no trabalho mais mecânico dela, onde os erros costumam nascer.",
       solution: "Mapeamento dos gargalos junto com quem executa o processo, e automação sob medida com n8n, Python ou Google Apps Script. A automação conversa com os sistemas que a empresa já tem; não exige trocar de ERP nem mudar a rotina de quem trabalha.",
       impact: [
-        "Emissão de notas fiscais automatizada com Python e Selenium na MedPless, operando sobre o próprio sistema web do fornecedor.",
+        "Emissão de notas fiscais automatizada com Python e Selenium, operando sobre o próprio sistema web do fornecedor.",
         "Sistema financeiro completo em Google Sheets e Apps Script: DRE, fluxo de caixa, faturas em PDF, cobrança por WhatsApp e log de auditoria.",
         "Entrega medida em dias, não em trimestres. Cada automação sobe em produção e é validada na operação real antes de fechar."
       ]
