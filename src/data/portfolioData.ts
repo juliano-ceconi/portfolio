@@ -111,7 +111,7 @@ export const projects: Project[] = [
     },
     links: [
       {
-        title: "Visualizar a plataforma de curso",
+        title: "Conhecer a Juliano Ceconi Academy, formações em engenharia de IA",
         url: "https://academy.zanettin.cloud"
       }
     ]

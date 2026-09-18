@@ -37,7 +37,7 @@ const SiteCard = ({ site }: { site: Site }) => {
         <div className="mt-auto pt-2">
           <Button className="w-full gap-2" asChild>
             <a href={site.url} target="_blank" rel="noopener noreferrer">
-              Ver site <ArrowUpRight className="h-4 w-4" />
+              Ver site <span className="sr-only">{site.name}</span> <ArrowUpRight className="h-4 w-4" />
             </a>
           </Button>
         </div>
