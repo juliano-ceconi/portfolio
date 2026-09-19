@@ -36,3 +36,17 @@ export const ogLocale: Record<Lang, string> = {
 export function pathFor(lang: Lang): string {
   return lang === DEFAULT_LANG ? '/' : `/${lang}/`;
 }
+
+/** Rotulo curto mostrado no seletor de idioma. */
+export const langCode: Record<Lang, string> = {
+  'pt-BR': 'PT',
+  en: 'EN',
+  es: 'ES',
+};
+
+/** Nome do idioma no proprio idioma, lido por leitor de tela. */
+export const langName: Record<Lang, string> = {
+  'pt-BR': 'Português',
+  en: 'English',
+  es: 'Español',
+};

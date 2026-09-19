@@ -26,6 +26,7 @@ export type UiStrings = {
   footerCredits: string;
   footerCreditsDesign: string;
   themeToggle: string;
+  languageSelector: string;
 };
 
 const strings: Localized<UiStrings> = {
@@ -50,7 +51,8 @@ const strings: Localized<UiStrings> = {
     educationTitle: 'Educação',
     footerCredits: 'Desenvolvido por Juliano Ceconi',
     footerCreditsDesign: 'Design original por',
-    themeToggle: 'Toggle theme',
+    themeToggle: 'Alternar tema',
+    languageSelector: 'Idioma',
   },
   en: {
     heroWhatsapp: 'Talk on WhatsApp',
@@ -74,6 +76,7 @@ const strings: Localized<UiStrings> = {
     footerCredits: 'Built by Juliano Ceconi',
     footerCreditsDesign: 'Original design by',
     themeToggle: 'Toggle theme',
+    languageSelector: 'Language',
   },
   es: {
     heroWhatsapp: 'Hablar por WhatsApp',
@@ -97,6 +100,7 @@ const strings: Localized<UiStrings> = {
     footerCredits: 'Desarrollado por Juliano Ceconi',
     footerCreditsDesign: 'Diseño original de',
     themeToggle: 'Cambiar tema',
+    languageSelector: 'Idioma',
   },
 };
 

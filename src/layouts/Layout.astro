@@ -1,7 +1,7 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
 import { config, siteCopy } from '../data/config';
-import { DEFAULT_LANG, htmlLang, ogLocale, pick, type Lang } from '@/i18n';
+import { DEFAULT_LANG, LANGS, htmlLang, ogLocale, pathFor, pick, type Lang } from '@/i18n';
 
 interface Props {
   lang?: Lang;
@@ -27,6 +27,12 @@ const canonical = new URL(Astro.url.pathname, config.siteUrl).href;
     <meta name="author" content={config.author} />
     <meta name="keywords" content={copy.keywords} />
     <link rel="canonical" href={canonical} />
+    {
+      LANGS.map((alt) => (
+        <link rel="alternate" hreflang={htmlLang[alt]} href={new URL(pathFor(alt), config.siteUrl).href} />
+      ))
+    }
+    <link rel="alternate" hreflang="x-default" href={new URL('/', config.siteUrl).href} />
     <link rel="icon" type="image/svg+xml" href={config.favicon} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -46,6 +52,33 @@ const canonical = new URL(Astro.url.pathname, config.siteUrl).href;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+
+    <!--
+      Tema aplicado antes da pintura e reaplicado depois de trocar de idioma: o
+      ViewTransitions substitui os atributos do <html> e apagaria a classe `dark`.
+      Script identico nas 3 paginas, entao o Astro o preserva e nao executa duas vezes.
+    -->
+    <script is:inline>
+      (() => {
+        const aplicarTema = () => {
+          const salvo = localStorage.getItem('theme') ?? 'dark';
+          localStorage.setItem('theme', salvo);
+          document.documentElement.classList.toggle('dark', salvo === 'dark');
+        };
+
+        aplicarTema();
+
+        if (window.__temaPronto) return;
+        window.__temaPronto = true;
+
+        document.addEventListener('astro:after-swap', aplicarTema);
+        document.addEventListener('click', (evento) => {
+          if (!evento.target.closest?.('#theme-toggle')) return;
+          const escuro = document.documentElement.classList.toggle('dark');
+          localStorage.setItem('theme', escuro ? 'dark' : 'light');
+        });
+      })();
+    </script>
 
     <ViewTransitions />
   </head>
