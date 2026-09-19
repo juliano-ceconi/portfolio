@@ -1,8 +1,8 @@
 """Gera a imagem de compartilhamento (Open Graph) do portfolio.
 
 Le nome e titulo do proprio `src/data/heroData.ts` para nao manter texto
-paralelo que possa divergir do site. Saida: `public/og-image.png`, 1200x630,
-que e o formato lido por WhatsApp, LinkedIn e X.
+paralelo que possa divergir do site. Saida: `public/og-image[-idioma].png`, 1200x630,
+que e o formato lido por WhatsApp, LinkedIn e X. Uma imagem por idioma.
 
 Uso (no cec-note, PowerShell, dentro de 02_Portfolio/portfolio):
     python scripts/gerar_og_image.py
@@ -18,7 +18,8 @@ from PIL import Image, ImageDraw, ImageFont
 
 RAIZ = Path(__file__).resolve().parent.parent
 HERO = RAIZ / "src" / "data" / "heroData.ts"
-SAIDA = RAIZ / "public" / "og-image.png"
+PUBLICO = RAIZ / "public"
+IDIOMAS = ("pt-BR", "en", "es")
 
 LARGURA, ALTURA = 1200, 630
 FUNDO = (4, 9, 17)          # --background do tema escuro: hsl(216 63% 4%)
@@ -39,7 +40,7 @@ def ler_hero(idioma: str = "pt-BR") -> tuple[str, str]:
     no bloco pedido para nao pegar o texto do idioma errado.
     """
     fonte = HERO.read_text(encoding="utf-8")
-    bloco = re.search(rf"'{re.escape(idioma)}':\s*\{{", fonte)
+    bloco = re.search(rf"'?{re.escape(idioma)}'?:\s*\{{", fonte)
     if not bloco:
         sys.exit(f"nao encontrei o bloco do idioma {idioma} em {HERO}")
     fonte = fonte[bloco.end() :]
@@ -70,8 +71,15 @@ def quebrar(texto: str, fnt: ImageFont.FreeTypeFont, limite: int) -> list[str]:
     return linhas
 
 
-def main() -> None:
-    nome, titulo = ler_hero()
+def saida(idioma: str) -> Path:
+    """`og-image.png` para o padrao; `og-image-<idioma>.png` para os demais."""
+    sufixo = "" if idioma == "pt-BR" else f"-{idioma}"
+    return PUBLICO / f"og-image{sufixo}.png"
+
+
+def gerar(idioma: str) -> None:
+    nome, titulo = ler_hero(idioma)
+    SAIDA = saida(idioma)
 
     img = Image.new("RGB", (LARGURA, ALTURA), FUNDO)
     d = ImageDraw.Draw(img)
@@ -98,6 +106,11 @@ def main() -> None:
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
     img.save(SAIDA, "PNG", optimize=True)
     print(f"{SAIDA.relative_to(RAIZ)}: {LARGURA}x{ALTURA}, {SAIDA.stat().st_size} bytes")
+
+
+def main() -> None:
+    for idioma in IDIOMAS:
+        gerar(idioma)
 
 
 if __name__ == "__main__":

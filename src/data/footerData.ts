@@ -42,4 +42,30 @@ export const footerData: Localized<Footer> = {
     socialLinks: redes,
     quote: '"Transformando processos complexos em soluções inteligentes."',
   },
+  en: {
+    currentYear: new Date().getFullYear(),
+    cta: {
+      titulo: 'Let us talk',
+      chamada:
+        'Tell me what the problem is: the task that eats your team, the customer service that cannot keep up or the website you still do not have. I answer with what can be done and how long it takes, no strings attached.',
+      whatsappLabel: 'Talk on WhatsApp',
+      whatsappUrl: whatsappUrl('en'),
+      email: heroData['pt-BR'].contact.email,
+    },
+    socialLinks: redes,
+    quote: '"Turning complex processes into intelligent solutions."',
+  },
+  es: {
+    currentYear: new Date().getFullYear(),
+    cta: {
+      titulo: 'Hablemos',
+      chamada:
+        'Cuéntame cuál es el problema: la tarea que consume a tu equipo, la atención que no da abasto o el sitio web que falta. Te respondo con lo que se puede hacer y en cuánto tiempo, sin compromiso.',
+      whatsappLabel: 'Hablar por WhatsApp',
+      whatsappUrl: whatsappUrl('es'),
+      email: heroData['pt-BR'].contact.email,
+    },
+    socialLinks: redes,
+    quote: '"Convertimos procesos complejos en soluciones inteligentes."',
+  },
 };

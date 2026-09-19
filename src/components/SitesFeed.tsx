@@ -21,7 +21,7 @@ const SiteCard = ({ site, t }: { site: Site; t: UiStrings }) => {
       />
       <CardHeader className="space-y-2 pb-2">
         <Badge variant="secondary" className="w-fit">
-          {site.label}
+          {site.label === 'cliente' ? t.sitesLabelClient : t.sitesLabelOwn}
         </Badge>
         <h3 className="text-xl font-bold leading-tight">{site.name}</h3>
       </CardHeader>

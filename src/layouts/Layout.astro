@@ -14,7 +14,7 @@ const copy = pick(siteCopy, lang);
 const { title = copy.siteTitle, description = copy.description } = props;
 
 // URL absoluta: WhatsApp, LinkedIn e X ignoram caminho relativo em og:image.
-const ogImage = new URL(config.ogImage, config.siteUrl).href;
+const ogImage = new URL(config.ogImage[lang], config.siteUrl).href;
 const canonical = new URL(Astro.url.pathname, config.siteUrl).href;
 ---
 
