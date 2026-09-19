@@ -3,6 +3,8 @@ import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Github, Mail, MessageCircle } from 'lucide-react';
 import { heroData } from '../data/heroData';
+import { DEFAULT_LANG, pick, type Lang } from '@/i18n';
+import { ui } from '@/i18n/ui';
 
 type Star = {
   x: number;
@@ -12,7 +14,9 @@ type Star = {
   speed: number;
 };
 
-const Hero = () => {
+const Hero = ({ lang = DEFAULT_LANG }: { lang?: Lang }) => {
+  const hero = pick(heroData, lang);
+  const t = ui(lang);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const stars = useRef<Star[]>([]);
   const mousePosition = useRef({ x: 0, y: 0 });
@@ -112,48 +116,48 @@ const Hero = () => {
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 text-center">
         <div className="mb-8 h-56 w-56 rounded-full border-4 border-primary shadow-lg overflow-hidden">
           <img
-            src={heroData.profilePicture}
-            alt={heroData.name}
+            src={hero.profilePicture}
+            alt={hero.name}
             className="h-full w-full object-cover object-center"
             style={{ transform: 'translate(2px, 1px) scale(1.20)' }}
           />
         </div>
         <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-6xl">
-          {heroData.name}
+          {hero.name}
         </h1>
         <p className="mb-6 text-xl text-muted-foreground sm:text-2xl">
-          {heroData.title}
+          {hero.title}
         </p>
         <p className="mb-8 max-w-2xl text-muted-foreground">
-          {heroData.description}
+          {hero.description}
         </p>
         <div className="mb-12 flex flex-col items-center gap-4 sm:flex-row">
           <Button asChild size="lg" className="rounded-full gap-2">
-            <a href={heroData.contact.whatsapp} target="_blank" rel="noopener noreferrer">
+            <a href={hero.contact.whatsapp} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="h-5 w-5" />
-              Falar no WhatsApp
+              {t.heroWhatsapp}
             </a>
           </Button>
           <div className="flex gap-3">
             <Button asChild variant="outline" size="lg" className="rounded-full">
-              <a href={heroData.contact.linkedin} target="_blank" rel="noopener noreferrer">
+              <a href={hero.contact.linkedin} target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
             </Button>
-            <Button asChild variant="outline" size="icon" className="rounded-full" aria-label="GitHub">
-              <a href={heroData.contact.github} target="_blank" rel="noopener noreferrer">
+            <Button asChild variant="outline" size="icon" className="rounded-full" aria-label={t.heroGithubLabel}>
+              <a href={hero.contact.github} target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
-            <Button asChild variant="outline" size="icon" className="rounded-full" aria-label="Enviar e-mail">
-              <a href={`mailto:${heroData.contact.email}`}>
+            <Button asChild variant="outline" size="icon" className="rounded-full" aria-label={t.heroEmailLabel}>
+              <a href={`mailto:${hero.contact.email}`}>
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
           </div>
         </div>
         <div className="mb-4 flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
-          {heroData.skills.map((skill) => (
+          {hero.skills.map((skill) => (
             <Badge key={skill} variant="secondary" className="text-sm">
               {skill}
             </Badge>

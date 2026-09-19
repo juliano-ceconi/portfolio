@@ -3,9 +3,13 @@ import { Github, Linkedin, Mail, MessageCircle } from 'lucide-react';
 import { Button } from './ui/button';
 import { Separator } from './ui/separator';
 import { footerData } from '../data/footerData';
+import { DEFAULT_LANG, pick, type Lang } from '@/i18n';
+import { ui } from '@/i18n/ui';
 
-const Footer = () => {
-  const { cta } = footerData;
+const Footer = ({ lang = DEFAULT_LANG }: { lang?: Lang }) => {
+  const dados = pick(footerData, lang);
+  const t = ui(lang);
+  const { cta } = dados;
 
   return (
     <footer className="relative z-10 bg-background/95 px-4 pb-11 backdrop-blur-sm">
@@ -32,7 +36,7 @@ const Footer = () => {
           </div>
 
           <div className="mt-6 flex gap-4">
-            {footerData.socialLinks.map((link) => (
+            {dados.socialLinks.map((link) => (
               <Button
                 key={link.name}
                 asChild
@@ -52,10 +56,10 @@ const Footer = () => {
 
         <div className="mt-10 flex flex-col items-center gap-1 text-center text-sm text-muted-foreground md:flex-row md:justify-between md:text-left">
           <p>
-            <i>{footerData.quote}</i>
+            <i>{dados.quote}</i>
           </p>
           <p className="text-xs text-muted-foreground/60">
-            Desenvolvido por Juliano Ceconi • Design original por <a href="https://github.com/isaac-ros/Astro-Shadcn-portfolio" target="_blank" rel="noreferrer" className="underline hover:text-foreground">Isaac Ros</a>
+            {t.footerCredits} • {t.footerCreditsDesign} <a href="https://github.com/isaac-ros/Astro-Shadcn-portfolio" target="_blank" rel="noreferrer" className="underline hover:text-foreground">Isaac Ros</a>
           </p>
         </div>
       </div>

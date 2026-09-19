@@ -32,9 +32,17 @@ FONTES = {
 }
 
 
-def ler_hero() -> tuple[str, str]:
-    """Extrai `name` e `title` do heroData.ts sem executar TypeScript."""
+def ler_hero(idioma: str = "pt-BR") -> tuple[str, str]:
+    """Extrai `name` e `title` do heroData.ts sem executar TypeScript.
+
+    O arquivo guarda um bloco por idioma (`'pt-BR': { ... }`); a busca comeca
+    no bloco pedido para nao pegar o texto do idioma errado.
+    """
     fonte = HERO.read_text(encoding="utf-8")
+    bloco = re.search(rf"'{re.escape(idioma)}':\s*\{{", fonte)
+    if not bloco:
+        sys.exit(f"nao encontrei o bloco do idioma {idioma} em {HERO}")
+    fonte = fonte[bloco.end() :]
     nome = re.search(r"name:\s*'([^']+)'", fonte)
     titulo = re.search(r"title:\s*'([^']+)'", fonte)
     if not nome or not titulo:

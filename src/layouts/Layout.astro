@@ -1,13 +1,17 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
-import { config } from '../data/config';
+import { config, siteCopy } from '../data/config';
+import { DEFAULT_LANG, htmlLang, ogLocale, pick, type Lang } from '@/i18n';
 
 interface Props {
+  lang?: Lang;
   title?: string;
   description?: string;
 }
 
-const { title = config.siteTitle, description = config.description } = Astro.props;
+const { lang = DEFAULT_LANG, ...props } = Astro.props;
+const copy = pick(siteCopy, lang);
+const { title = copy.siteTitle, description = copy.description } = props;
 
 // URL absoluta: WhatsApp, LinkedIn e X ignoram caminho relativo em og:image.
 const ogImage = new URL(config.ogImage, config.siteUrl).href;
@@ -15,20 +19,20 @@ const canonical = new URL(Astro.url.pathname, config.siteUrl).href;
 ---
 
 <!doctype html>
-<html lang="pt-BR">
+<html lang={htmlLang[lang]}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="author" content={config.author} />
-    <meta name="keywords" content={config.keywords} />
+    <meta name="keywords" content={copy.keywords} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href={config.favicon} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
 
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale" content={ogLocale[lang]} />
     <meta property="og:site_name" content={config.author} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
