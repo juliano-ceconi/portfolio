@@ -31,7 +31,7 @@ const idiomasAlternativos = LANGS.filter((idioma) => idioma !== lang);
     </Button>
     <nav
       aria-label={t.languageSelector}
-      class="flex flex-col items-center gap-1 rounded-full border border-input bg-background p-1"
+      class="flex flex-col items-start gap-1 rounded-3xl border border-input bg-background p-1"
     >
       <div class="flex items-center gap-1">
         <a
@@ -61,7 +61,7 @@ const idiomasAlternativos = LANGS.filter((idioma) => idioma !== lang);
           <span class="sr-only">{t.languageExpand}</span>
         </button>
       </div>
-      <div id="idiomas-alternativos" class="hidden flex-col items-center gap-1">
+      <div id="idiomas-alternativos" class="flex hidden flex-col items-start gap-1">
         {
           idiomasAlternativos.map((idioma) => (
             <a
