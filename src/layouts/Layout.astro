@@ -80,6 +80,31 @@ const canonical = new URL(Astro.url.pathname, config.siteUrl).href;
       })();
     </script>
 
+    <!--
+      Seletor de idioma: colapsado mostra so a bandeira atual. O clique e tratado por
+      delegacao no document, entao continua valendo depois que o ViewTransitions troca
+      a pagina; cada pagina nova ja chega colapsada.
+    -->
+    <script is:inline>
+      (() => {
+        if (window.__idiomasPronto) return;
+        window.__idiomasPronto = true;
+
+        document.addEventListener('click', (evento) => {
+          const botao = evento.target.closest?.('#alternar-idiomas');
+          if (!botao) return;
+          const alternativos = document.getElementById('idiomas-alternativos');
+          if (!alternativos) return;
+          const aberto = botao.getAttribute('aria-expanded') === 'true';
+          botao.setAttribute('aria-expanded', String(!aberto));
+          // Giro por estilo inline: a classe do Tailwind so existiria no CSS se
+          // estivesse escrita no markup, e aqui ela e aplicada apenas em tempo de clique.
+          botao.style.transform = aberto ? '' : 'rotate(180deg)';
+          alternativos.classList.toggle('hidden', aberto);
+        });
+      })();
+    </script>
+
     <ViewTransitions />
   </head>
   <body>

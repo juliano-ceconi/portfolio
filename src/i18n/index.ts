@@ -37,11 +37,11 @@ export function pathFor(lang: Lang): string {
   return lang === DEFAULT_LANG ? '/' : `/${lang}/`;
 }
 
-/** Rotulo curto mostrado no seletor de idioma. */
-export const langCode: Record<Lang, string> = {
-  'pt-BR': 'PT',
-  en: 'EN',
-  es: 'ES',
+/** Bandeira mostrada no seletor de idioma. */
+export const langFlag: Record<Lang, string> = {
+  'pt-BR': '/bandeiras/pt-BR.svg',
+  en: '/bandeiras/en.svg',
+  es: '/bandeiras/es.svg',
 };
 
 /** Nome do idioma no proprio idioma, lido por leitor de tela. */

@@ -27,6 +27,7 @@ export type UiStrings = {
   footerCreditsDesign: string;
   themeToggle: string;
   languageSelector: string;
+  languageExpand: string;
 };
 
 const strings: Localized<UiStrings> = {
@@ -53,6 +54,7 @@ const strings: Localized<UiStrings> = {
     footerCreditsDesign: 'Design original por',
     themeToggle: 'Alternar tema',
     languageSelector: 'Idioma',
+    languageExpand: 'Mostrar os outros idiomas',
   },
   en: {
     heroWhatsapp: 'Talk on WhatsApp',
@@ -77,6 +79,7 @@ const strings: Localized<UiStrings> = {
     footerCreditsDesign: 'Original design by',
     themeToggle: 'Toggle theme',
     languageSelector: 'Language',
+    languageExpand: 'Show the other languages',
   },
   es: {
     heroWhatsapp: 'Hablar por WhatsApp',
@@ -101,6 +104,7 @@ const strings: Localized<UiStrings> = {
     footerCreditsDesign: 'Diseño original de',
     themeToggle: 'Cambiar tema',
     languageSelector: 'Idioma',
+    languageExpand: 'Mostrar los otros idiomas',
   },
 };
 

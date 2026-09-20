@@ -1,13 +1,13 @@
 ---
 import { Button } from '@/components/ui/button';
-import { MoonIcon, SunIcon } from 'lucide-react';
+import { ChevronDownIcon, MoonIcon, SunIcon } from 'lucide-react';
 import Hero from '@/components/Hero';
 import Experience from '@/components/Experience';
 import PortfolioFeed from '@/components/PortfolioFeed';
 import SitesFeed from '@/components/SitesFeed';
 import Education from '@/components/Education';
 import Footer from '@/components/Footer';
-import { DEFAULT_LANG, LANGS, htmlLang, langCode, langName, pathFor, type Lang } from '@/i18n';
+import { DEFAULT_LANG, LANGS, htmlLang, langFlag, langName, pathFor, type Lang } from '@/i18n';
 import { ui } from '@/i18n/ui';
 
 interface Props {
@@ -16,39 +16,73 @@ interface Props {
 
 const { lang = DEFAULT_LANG } = Astro.props;
 const t = ui(lang);
+
+// O idioma atual continua sendo link, so que fora da lista que expande: e isso que
+// mantem o conjunto de enderecos identico nas tres paginas (conferir_paridade.py).
+const idiomasAlternativos = LANGS.filter((idioma) => idioma !== lang);
 ---
 
 <main class="min-h-screen bg-background">
-  <div class="fixed top-4 right-4 z-50 flex items-center gap-2">
-    <nav
-      aria-label={t.languageSelector}
-      class="flex items-center gap-1 rounded-full border border-input bg-background p-1"
-    >
-      {
-        LANGS.map((idioma) => (
-          <a
-            href={pathFor(idioma)}
-            lang={htmlLang[idioma]}
-            hreflang={htmlLang[idioma]}
-            aria-current={idioma === lang ? 'page' : undefined}
-            class:list={[
-              'rounded-full px-2.5 py-1.5 text-xs font-medium transition-colors',
-              idioma === lang
-                ? 'bg-accent text-accent-foreground'
-                : 'hover:bg-accent hover:text-accent-foreground',
-            ]}
-          >
-            <span aria-hidden="true">{langCode[idioma]}</span>
-            <span class="sr-only">{langName[idioma]}</span>
-          </a>
-        ))
-      }
-    </nav>
+  <div class="fixed top-4 right-4 z-50 flex flex-col items-end gap-2">
     <Button variant="outline" size="icon" className="rounded-full" id="theme-toggle">
       <SunIcon className="h-[2.2rem] w-[2.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
       <MoonIcon className="absolute h-[2.2rem] w-[2.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
       <span class="sr-only">{t.themeToggle}</span>
     </Button>
+    <nav
+      aria-label={t.languageSelector}
+      class="flex flex-col items-center gap-1 rounded-full border border-input bg-background p-1"
+    >
+      <div class="flex items-center gap-1">
+        <a
+          href={pathFor(lang)}
+          lang={htmlLang[lang]}
+          hreflang={htmlLang[lang]}
+          aria-current="page"
+          class="rounded-full bg-accent p-2 transition-colors"
+        >
+          <img
+            src={langFlag[lang]}
+            alt=""
+            width="24"
+            height="17"
+            class="h-[17px] w-6 rounded-[2px] ring-1 ring-border"
+          />
+          <span class="sr-only">{langName[lang]}</span>
+        </a>
+        <button
+          type="button"
+          id="alternar-idiomas"
+          aria-expanded="false"
+          aria-controls="idiomas-alternativos"
+          class="rounded-full p-2 text-muted-foreground transition-transform hover:bg-accent hover:text-accent-foreground"
+        >
+          <ChevronDownIcon className="h-5 w-5" />
+          <span class="sr-only">{t.languageExpand}</span>
+        </button>
+      </div>
+      <div id="idiomas-alternativos" class="hidden flex-col items-center gap-1">
+        {
+          idiomasAlternativos.map((idioma) => (
+            <a
+              href={pathFor(idioma)}
+              lang={htmlLang[idioma]}
+              hreflang={htmlLang[idioma]}
+              class="rounded-full p-2 transition-colors hover:bg-accent"
+            >
+              <img
+                src={langFlag[idioma]}
+                alt=""
+                width="24"
+                height="17"
+                class="h-[17px] w-6 rounded-[2px] ring-1 ring-border"
+              />
+              <span class="sr-only">{langName[idioma]}</span>
+            </a>
+          ))
+        }
+      </div>
+    </nav>
   </div>
   <Hero client:load lang={lang} />
   <SitesFeed client:visible lang={lang} />
