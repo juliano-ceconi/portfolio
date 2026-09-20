@@ -9,7 +9,7 @@ export interface Site {
   /** Usado para localizar a captura de tela em `public/vitrine/<slug>.webp`. */
   slug: string;
   /** Chave do rótulo do card; o texto vem de `src/i18n/ui.ts`. */
-  label: 'cliente' | 'proprio';
+  label: 'cliente' | 'proprio' | 'cofounder-cto';
 }
 
 export const sites: Localized<Site[]> = {
@@ -22,7 +22,7 @@ export const sites: Localized<Site[]> = {
       tags: ['Agentes de IA', 'Automação comercial', 'WhatsApp', 'Conversão'],
       url: 'https://www.hubagenteia.com.br/',
       slug: 'hub-agente-ia',
-      label: 'proprio',
+      label: 'cofounder-cto',
     },
     {
       id: 2,
@@ -114,7 +114,7 @@ export const sites: Localized<Site[]> = {
       tags: ['AI agents', 'Sales automation', 'WhatsApp', 'Conversion'],
       url: 'https://www.hubagenteia.com.br/',
       slug: 'hub-agente-ia',
-      label: 'proprio',
+      label: 'cofounder-cto',
     },
     {
       id: 2,
@@ -206,7 +206,7 @@ export const sites: Localized<Site[]> = {
       tags: ['Agentes de IA', 'Automatización comercial', 'WhatsApp', 'Conversión'],
       url: 'https://www.hubagenteia.com.br/',
       slug: 'hub-agente-ia',
-      label: 'proprio',
+      label: 'cofounder-cto',
     },
     {
       id: 2,

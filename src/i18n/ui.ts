@@ -15,6 +15,7 @@ export type UiStrings = {
   sitesViewSite: string;
   sitesLabelClient: string;
   sitesLabelOwn: string;
+  sitesLabelCofounderCtO: string;
   experienceTitle: string;
   projectsTitle: string;
   projectsChallenge: string;
@@ -42,6 +43,7 @@ const strings: Localized<UiStrings> = {
     sitesViewSite: 'Ver site',
     sitesLabelClient: 'Cliente',
     sitesLabelOwn: 'Projeto próprio',
+    sitesLabelCofounderCtO: 'Co-Founder & CTO',
     experienceTitle: 'Experiência Profissional',
     projectsTitle: 'O que eu faço',
     projectsChallenge: 'Desafio',
@@ -67,6 +69,7 @@ const strings: Localized<UiStrings> = {
     sitesViewSite: 'Visit site',
     sitesLabelClient: 'Client',
     sitesLabelOwn: 'Own product',
+    sitesLabelCofounderCtO: 'Co-Founder & CTO',
     experienceTitle: 'Professional Experience',
     projectsTitle: 'What I do',
     projectsChallenge: 'Challenge',
@@ -92,6 +95,7 @@ const strings: Localized<UiStrings> = {
     sitesViewSite: 'Ver sitio',
     sitesLabelClient: 'Cliente',
     sitesLabelOwn: 'Proyecto propio',
+    sitesLabelCofounderCtO: 'Co-Founder & CTO',
     experienceTitle: 'Experiencia Profesional',
     projectsTitle: 'Lo que hago',
     projectsChallenge: 'Desafío',
