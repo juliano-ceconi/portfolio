@@ -253,91 +253,91 @@ export const projects: Localized<Project[]> = {
     {
       id: 1,
       title: "Automatización de procesos a medida",
-      summary: "La tarea repetitiva que hoy consume horas de tu equipo (emitir facturas, conciliar el banco, armar informes o cobrar a clientes) pasa a funcionar sola. Mapeo el cuello de botella, construyo la automatización y la dejo funcionando dentro de los sistemas que ya usas.",
+      summary: "La tarea repetitiva que hoy consume horas de tu equipo (emitir facturas, conciliar bancos, armar informes o gestionar cobros) pasa a funcionar sola. Mapeo los cuellos de botella, construyo la automatización y la integro directamente en los sistemas que ya usas.",
       tags: ["Automatización de procesos", "n8n", "Python", "Google Apps Script", "Integraciones", "Pymes"],
       details: {
-        challenge: "En la mayoría de las pymes el proceso crítico depende de alguien escribiendo: facturas emitidas a mano, conciliación revisada línea por línea, el mismo informe rehecho cada semana con el mismo formato. Es la hora más cara de la empresa gastada en su trabajo más mecánico, justo donde nacen los errores.",
-        solution: "Mapeo de los cuellos de botella junto a quien ejecuta el proceso y automatización a medida con n8n, Python o Google Apps Script. La automatización se comunica con los sistemas que la empresa ya tiene; no exige cambiar de ERP ni alterar la rutina de nadie.",
+        challenge: "En la mayoría de las pymes, las operaciones críticas dependen de entradas manuales: facturas emitidas a mano, conciliaciones revisadas línea por línea y los mismos informes rehechos cada semana. Es el talento más valioso de la empresa consumido en tareas mecánicas, el escenario exacto donde ocurren los errores humanos.",
+        solution: "Mapeo los cuellos de botella junto al equipo que ejecuta la tarea y desarrollo automatizaciones a medida con n8n, Python o Google Apps Script. La solución se comunica directamente con las herramientas existentes, sin exigir cambios de ERP ni alterar las rutinas diarias.",
         impact: [
-          "Emisión de facturas automatizada con Python y Selenium, operando sobre el propio sistema web del proveedor.",
-          "Sistema financiero completo en Google Sheets y Apps Script: estado de resultados, flujo de caja, facturas en PDF, cobro por WhatsApp y registro de auditoría.",
-          "Entrega medida en días, no en trimestres. Cada automatización entra en producción y se valida en la operación real antes de cerrarse."
+          "Emisión de facturas automatizada con Python y Selenium, operando directamente sobre los portales web de proveedores.",
+          "Sistema financiero completo en Google Sheets y Apps Script: estados de resultados, flujo de caja, facturas en PDF, recordatorios de cobro por WhatsApp y registro de auditoría.",
+          "Tiempos de entrega medidos en días, no en trimestres. Cada automatización se despliega en producción y se valida en la operación real antes de la entrega final."
         ]
       }
     },
     {
       id: 2,
-      title: "Agente de IA que atiende por WhatsApp",
-      summary: "Un asistente de IA en tu WhatsApp: responde a cualquier hora, entiende el contexto de la conversación, consulta la base de conocimiento de la empresa, califica al interesado y pasa la conversación a una persona cuando hace falta.",
+      title: "Agentes de IA para atención al cliente por WhatsApp",
+      summary: "Un asistente de IA dedicado 24/7 en tu WhatsApp: comprende el contexto de la conversación, consulta la base de conocimiento de la empresa, califica prospectos y transfiere fluidamente los casos complejos a un agente humano.",
       tags: ["Agentes de IA", "WhatsApp", "n8n", "RAG", "Evolution API", "Supabase", "Docker"],
       details: {
-        challenge: "Quien llega fuera de horario o en un pico de demanda se queda esperando, y quien espera le compra a la competencia. Contratar más gente para la primera atención es caro, tarda en formarse y sigue sin cubrir la madrugada ni el fin de semana.",
-        solution: "Ecosistema en cuatro capas, todo en producción en Hub Agente IA: flujos en n8n orquestando el ciclo del contacto; agentes con RAG consultando una base vectorial en pgvector para responder con el contenido de la propia empresa; MCP integrando las herramientas; e infraestructura propia en Docker con Supabase y Redis.",
+        challenge: "Las consultas que llegan fuera de horario o en picos de demanda suelen quedar sin respuesta, y los clientes en espera compran en la competencia. Contratar más personal para la atención inicial es costoso, requiere capacitación constante y sigue sin cubrir noches ni fines de semana.",
+        solution: "Arquitectura en cuatro capas en producción en Hub Agente IA: flujos en n8n orquestando el ciclo del contacto; agentes con RAG consultando embeddings en pgvector para responder con información verificada de la empresa; MCP integrando herramientas externas; e infraestructura self-hosted en Docker con Supabase y Redis.",
         impact: [
-          "Primera atención y calificación funcionando sin intervención humana, con traspaso a una persona cuando el caso lo pide.",
-          "Respuestas ancladas en la base de conocimiento del cliente, no en la suposición del modelo.",
-          "Ciclo de ingeniería completo: escritura del prompt, evaluación, publicación y observabilidad, con métricas Prometheus en n8n self-hosted.",
-          "Orquestación multi-LLM: cambiar el modelo de IA no obliga a reescribir la atención."
+          "Atención inicial y calificación de prospectos sin intervención humana, con derivación fluida a un operador cuando el caso lo requiere.",
+          "Respuestas precisas y ancladas rigurosamente en la documentación de la empresa, evitando alucinaciones del modelo.",
+          "Ciclo completo de ingeniería de IA: diseño de prompts, evaluación sistemática, despliegue y observabilidad en tiempo real con métricas Prometheus en n8n.",
+          "Orquestación multi-LLM: permite actualizar o cambiar de modelo fundacional sin necesidad de reconstruir los flujos de atención."
         ]
       }
     },
     {
       id: 3,
-      title: "Creación de sitios web y landing pages",
-      summary: "Sitio institucional, página de venta o landing page de campaña: construidos desde cero, publicados con dominio y HTTPS, rápidos en el móvil y conectados a tu WhatsApp. No me quedo en el prototipo, la página se entrega en línea.",
+      title: "Desarrollo de sitios web y landing pages",
+      summary: "Sitios institucionales, páginas de venta de alta conversión y landing pages para campañas: desarrollados desde cero, publicados con dominio propio y HTTPS, ultrarrápidos en móviles y conectados a WhatsApp. Entregados en producción, no solo como maquetas.",
       tags: ["Sitios web", "Landing pages", "React", "Vite", "Astro", "Publicación y dominio"],
       details: {
-        challenge: "La empresa sin sitio web pierde al cliente que busca antes de llamar. Y el sitio que no explica en pocos segundos qué vende la empresa, o que se traba en el móvil, lo pierde igual, con el agravante de que ya costó dinero.",
-        solution: "Página construida a medida, con el texto escrito para quien compra y no para quien programa, publicada con dominio propio, certificado de seguridad y carga rápida. Cuando tiene sentido, sale ya integrada a WhatsApp, a formulario y a la atención automática.",
+        challenge: "Una empresa sin sitio web pierde a los clientes que investigan antes de comprar. Y un sitio que no explica con claridad la propuesta de valor en pocos segundos, o que tarda en cargar en móviles, pierde clientes igual de rápido, habiendo costado tiempo y dinero.",
+        solution: "Páginas desarrolladas a medida, con textos redactados para convencer al comprador y no al programador, publicadas con dominio propio, certificado SSL y tiempos de carga inmediatos. Integradas de forma nativa con WhatsApp, formularios de captura y sistemas de gestión.",
         impact: [
-          "Nueve proyectos en línea hoy: la vitrina al inicio de esta página reúne los trabajos, y cada tarjeta lleva al sitio publicado.",
-          "Publicación, dominio y HTTPS forman parte de la entrega; el cliente recibe la dirección funcionando, no un archivo.",
-          "Misma base técnica de los sistemas: la página puede crecer a área de usuarios, catálogo o panel sin rehacerse desde cero."
+          "Nueve proyectos en producción hoy: la vitrina superior presenta estas implementaciones con enlaces directos a cada sitio web publicado.",
+          "Despliegue completo, configuración de dominio y certificados HTTPS incluidos en la entrega; el cliente recibe su sitio operativo, no un paquete de archivos.",
+          "Construidos sobre bases técnicas modernas: las páginas pueden escalar fácilmente a áreas de miembros, catálogos o paneles sin necesidad de rehacerse desde cero."
         ]
       }
     },
     {
       id: 4,
-      title: "Sistema de gestión a medida (CRM, panel, control interno)",
-      summary: "Cuando ninguna herramienta de catálogo encaja y la empresa vive de planillas paralelas, construyo el sistema que atiende exactamente su proceso, con control de acceso por usuario, datos centralizados y publicación en producción.",
+      title: "Sistemas de gestión a medida (CRM, paneles y control interno)",
+      summary: "Cuando el software comercial no se ajusta y tu empresa depende de planillas dispersas, desarrollo plataformas web a medida que responden con precisión a tus procesos, con control de acceso por roles, datos centralizados y despliegue llave en mano.",
       tags: ["React 19", "Vite", "Supabase", "PostgreSQL", "Vitest", "Docker", "nginx"],
       details: {
-        challenge: "Control repartido en planillas sueltas, cada área con su versión de la verdad y nadie sabiendo qué número es el correcto a la hora de decidir. Cambiar a un sistema enlatado suele significar pagar por muchas funciones inútiles y aun así no cubrir el detalle que importa.",
-        solution: "Aplicación web a medida en React 19 con Vite y base Supabase/PostgreSQL, con pruebas automatizadas en Vitest, verificación de código, empaquetado en Docker y publicación con nginx. Despliegue versionado y runbook de operación escritos junto con el sistema.",
+        challenge: "Información operativa fragmentada en planillas aisladas, donde cada departamento maneja su propia versión de los hechos y la toma de decisiones carece de datos confiables. Las plataformas SaaS genéricas obligan a pagar por funciones innecesarias sin resolver los detalles críticos del negocio.",
+        solution: "Aplicaciones web full-stack a medida desarrolladas con React 19, Vite y Supabase/PostgreSQL, respaldadas por pruebas automatizadas en Vitest, auditorías de código, contenedores Docker y proxies inversos con nginx. Incluye despliegue versionado y runbooks operativos.",
         impact: [
-          "CRM en producción para cliente de pago de Microlins, en uso en la rutina comercial (microlins.hubagenteia.cloud).",
-          "Una sola base de datos en lugar de las planillas paralelas, con historial y control de acceso por usuario.",
-          "El sistema es del cliente: código, base y servidor quedan bajo su control, sin mensualidad por usuario."
+          "CRM en producción para una franquicia de Microlins, utilizado diariamente por sus equipos de admisiones y ventas (microlins.hubagenteia.cloud).",
+          "Una única fuente de verdad que reemplaza las planillas aisladas, con historial de cambios y permisos basados en roles.",
+          "Propiedad total del cliente: código fuente, bases de datos y servidores quedan bajo su control exclusivo, sin costos mensuales por usuario."
         ]
       }
     },
     {
       id: 5,
       title: "Gestión y automatización financiera",
-      summary: "Estructuración de rutinas financieras, flujo de caja en tiempo real, conciliación y cobro automático. Acabo con la gestión a ciegas y con el retrabajo manual en planillas desencontradas.",
+      summary: "Estructuración de operaciones financieras: flujo de caja en tiempo real, conciliación bancaria ágil y secuencias inteligentes de cobro. Eliminamos la gestión a ciegas y las horas dedicadas al retrabajo manual en planillas descoordinadas.",
       tags: ["Gestión financiera", "Flujo de caja", "Estado de resultados", "Cobro automático", "Conciliación bancaria", "Pymes"],
       details: {
-        challenge: "Muchas empresas operan sin claridad real sobre sus márgenes: los cobros se atrasan por falta de seguimiento, la conciliación consume horas de revisión manual y el cierre de mes se vuelve una incógnita. El gestor gasta energía apagando incendios operativos en vez de decidir con números confiables.",
-        solution: "Organización práctica del área financiera junto con automatización. Implantación de control de flujo de caja, conciliación ágil, secuencias de cobro automatizadas y estados de resultados que revelan el resultado real de la operación.",
+        challenge: "Muchas empresas operan sin visibilidad clara sobre sus márgenes reales: las cuentas por cobrar se atrasan por falta de seguimiento, la conciliación exige horas de verificación manual y los cierres de mes se vuelven inciertos. Los líderes terminan apagando urgencias operativas en lugar de guiar el negocio con datos confiables.",
+        solution: "Organización práctica del área financiera combinada con automatización a medida: control estricto del flujo de caja, conciliación ágil, secuencias de cobro automatizadas y estados de resultados (P&L) que reflejan el estado real de la operación.",
         impact: [
-          "Ecosistema financiero integrado con generación automática de facturas en PDF, estado de resultados gerencial y avisos de cobro por WhatsApp.",
-          "Menos tiempo dedicado a la conciliación bancaria y a la emisión manual de facturas.",
-          "Visión clara de la caja y previsibilidad de cobros para decidir con fundamento."
+          "Ecosistema financiero integrado con emisión automática de facturas en PDF, estados de resultados gerenciales y recordatorios de cobro por WhatsApp.",
+          "Reducción drástica del tiempo operativo dedicado a la conciliación bancaria y a la emisión manual de facturas.",
+          "Visibilidad del flujo de caja en tiempo real y previsibilidad de cobros para tomar decisiones estratégicas fundamentadas."
         ]
       }
     },
     {
       id: 6,
-      title: "Formación y taller de IA aplicada al negocio",
-      summary: "Taller práctico para que el equipo use IA en el trabajo diario, centrado en la práctica y sin teoría innecesaria. El equipo aprende a aplicarla en su propio proceso y a mantener lo que se construyó.",
+      title: "Talleres y formación: IA aplicada a los negocios",
+      summary: "Talleres prácticos que capacitan a tu equipo para utilizar IA en el trabajo diario. Enfoque 100% práctico aplicado a los procesos reales de la empresa, sin rodeos teóricos, garantizando que el personal pueda mantener y evolucionar sus propias soluciones.",
       tags: ["Formación", "Taller", "IA aplicada", "Automatización", "Excel y Google Sheets", "In-company"],
       details: {
-        challenge: "El equipo oye hablar de IA todos los días y no sabe dónde encaja en su propio trabajo. Resultado: o nadie la usa, o cada uno la usa a su manera, sin criterio y sin claridad sobre qué puede o no salir de la empresa.",
-        solution: "Contenido armado sobre el proceso real de la empresa: dónde caben la IA y la automatización, dónde no, qué se puede enviar a una herramienta de terceros y cómo mantener lo creado. Formato de medio día o trayecto in-company.",
+        challenge: "Los equipos escuchan hablar de inteligencia artificial a diario pero carecen de claridad sobre cómo aplicarla a sus tareas concretas. El resultado suele ser la falta de adopción o un uso desordenado que compromete la privacidad de datos sin estándares de calidad.",
+        solution: "Contenido diseñado sobre los flujos de trabajo reales de la empresa: identificar casos de uso de alto impacto, definir límites de seguridad para datos sensibles y capacitar al equipo para crear y mantener sus propias automatizaciones. Disponible en jornadas intensivas o programas corporativos.",
         impact: [
-          "Experiencia de aula: profesor de informática (grupos y clases VIP) y ponente en el ciclo de mercado laboral de Microlins.",
-          "Plataforma de cursos propia en producción: Juliano Ceconi Academy, con portal del alumno y reproductor de clases.",
-          "El equipo pasa a crear y mantener sus propias automatizaciones, reduciendo la dependencia de soporte externo."
+          "Sólida trayectoria docente: amplia experiencia como instructor de informática y conferencista en programas de capacitación y empleabilidad.",
+          "Plataforma educativa propia en producción: Juliano Ceconi Academy, con panel del alumno y sistema de reproducción de clases.",
+          "Autonomía operativa para el equipo: los colaboradores adquieren la capacidad de crear, adaptar y mantener automatizaciones sin depender de soporte externo."
         ]
       },
       links: [
@@ -350,15 +350,15 @@ export const projects: Localized<Project[]> = {
     {
       id: 7,
       title: "Infraestructura propia, segura y bajo tu control",
-      summary: "Servidor, publicación, seguridad y copias de seguridad de lo que se construye. El sistema corre en infraestructura propia, con un costo previsible de servidor en vez de mensualidad por usuario, a cargo de quien desarrolló la solución.",
+      summary: "Configuración, despliegue, ciberseguridad y respaldos automatizados para tus sistemas. Tus aplicaciones operan en infraestructura dedicada con costos de servidor previsibles en lugar de tarifas por usuario, bajo el cuidado del ingeniero que construyó la solución.",
       tags: ["VPS", "Docker", "Traefik", "TLS", "fail2ban", "Tailscale", "Backup", "PM2"],
       details: {
-        challenge: "Un sistema entregado sin nadie que opere el servidor se vuelve problema del cliente en el primer incidente. Y la alternativa habitual de apilar suscripciones de plataformas de terceros convierte un costo variable en un gasto que crece sin control.",
-        solution: "Operación self-hosted completa en VPS Ubuntu 24.04: Docker y Docker Compose, Traefik publicando los servicios con certificado TLS, fail2ban bloqueando intentos de invasión, firewall cerrando el acceso administrativo público, administración remota por red privada Tailscale y procesos gestionados con PM2.",
+        challenge: "Desplegar software sin soporte operativo deja a la empresa desprotegida ante cualquier incidente técnico. Por otro lado, acumular suscripciones de plataformas de terceros convierte costos variables en gastos que escalan sin control.",
+        solution: "Arquitectura self-hosted completa en Ubuntu 24.04 LTS: contenedores Docker y Docker Compose, proxy inverso Traefik con certificados TLS automáticos, prevención de intrusiones con fail2ban, puertos públicos bloqueados, administración remota cifrada mediante Tailscale VPN y gestión de procesos con PM2.",
         impact: [
-          "Varios servicios en producción en el mismo servidor, cada uno con dirección y certificado propios.",
-          "Copia de seguridad, restauración y monitoreo con documentación operativa práctica, con procedimientos definidos antes de cualquier incidente.",
-          "Acceso administrativo fuera de internet pública: puerto de administración cerrado, entrada solo por la red privada."
+          "Múltiples servicios aislados conviviendo de forma segura en un mismo servidor, cada uno con dominio y certificados SSL propios.",
+          "Respaldos automatizados, restauración y monitoreo con documentación operativa práctica, garantizando procedimientos claros ante cualquier eventualidad.",
+          "Cero exposición de puertos administrativos a internet pública: el acceso al servidor se gestiona exclusivamente a través de redes privadas autenticadas (Tailscale)."
         ]
       }
     }

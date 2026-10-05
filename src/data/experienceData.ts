@@ -112,46 +112,46 @@ export const jobs: Localized<Job[]> = {
       company: "Hub Agente IA",
       dates: "2025 - Presente",
       description: [
-        "Fundación y liderazgo técnico de Hub Agente IA, estructurando soluciones de IA aplicada, agentes autónomos y sistemas a medida para pequeñas y medianas empresas:",
-        "Agentes de IA y automatización B2B: n8n self-hosted con métricas Prometheus, mensajería con Evolution API (WhatsApp), Redis, Supabase/PostgreSQL, pgvector para RAG, MCP, orquestación multi-LLM y central de evaluación de prompts.",
-        "Producto en producción: CRM desarrollado para cliente de pago (microlins.hubagenteia.cloud) en React, Vite, Supabase, Vitest, Docker, nginx y despliegue automatizado por clave SSH.",
-        "Infraestructura self-hosted: VPS Ubuntu 24.04 con Docker Compose, Traefik con TLS automático, fail2ban, Tailscale, PM2, rutinas de copia de seguridad y runbooks de monitoreo.",
+        "Cofundación y liderazgo técnico de Hub Agente IA, estructurando soluciones de IA aplicada, agentes autónomos y sistemas a medida para pequeñas y medianas empresas:",
+        "Agentes de IA y automatización B2B: n8n self-hosted con métricas en Prometheus, mensajería con Evolution API (WhatsApp), Redis, Supabase/PostgreSQL, pgvector para RAG, MCP, orquestación multi-LLM y central de evaluación de prompts.",
+        "Producto en producción: CRM desarrollado para cliente corporativo (microlins.hubagenteia.cloud) con React, Vite, Supabase, Vitest, Docker, nginx y despliegue automatizado mediante clave SSH.",
+        "Infraestructura self-hosted: VPS Ubuntu 24.04 con Docker Compose, Traefik con TLS automático, fail2ban, Tailscale, PM2, rutinas de respaldo y runbooks de monitoreo.",
         "Laboratorios de ingeniería: concepción y desarrollo interno de los proyectos Okam (gobernanza de IA) y Doroapp (gestión de enfoque gamificada).",
         "Tecnologías: n8n, Docker, Supabase, PostgreSQL, pgvector, Redis, Traefik, Tailscale, React, Vite, Node.js, Next.js, Prisma, Vitest, Evolution API, MCP, RAG, Python."
       ]
     },
     {
-      title: "Gerente Financiero y Desarrollador de Automatizaciones",
+      title: "Gerente Financiero e Ingeniero de Automatización",
       company: "MedPless Assist",
-      dates: "Mayo/24 a Junio/25",
+      dates: "Mayo 2024 a Junio 2025",
       description: [
-        "Lideré la modernización y automatización de procesos financieros y de TI críticos, convirtiendo operaciones manuales en sistemas guiados por datos para reducir errores y liberar al equipo para tareas de mayor valor.",
-        "Automatización de facturas en Python: solución completa que eliminó el procesamiento manual de facturas, con una reducción drástica de tiempo y errores.",
-        "Sistema financiero integrado (Google Sheets + Apps Script + Twilio): paneles en tiempo real, flujo de caja, facturas en PDF automáticas, avisos por WhatsApp y estado de resultados en un ecosistema rastreable y auditable.",
-        "Gestión de la relación con unas 80 clínicas, laboratorios y hospitales más 20 profesionales de la salud, responsable de todo el ciclo de facturación y pagos.",
+        "Lideré la modernización y automatización de procesos financieros y de TI críticos, transformando operaciones manuales en sistemas orientados a datos para reducir errores y liberar al equipo para tareas de mayor valor estratégico.",
+        "Automatización de facturación en Python: solución integral que eliminó el procesamiento manual de facturas, logrando una reducción drástica de tiempos operativos y errores.",
+        "Sistema financiero integrado (Google Sheets + Apps Script + Twilio): paneles en tiempo real, flujo de caja, emisión automática de facturas en PDF, avisos por WhatsApp y generación de estados de resultados en un ecosistema trazable y auditable.",
+        "Gestión de relaciones estratégicas con unas 80 clínicas, laboratorios y hospitales, más 20 profesionales de la salud, liderando el ciclo completo de facturación y liquidaciones.",
         "Tecnologías: Python, Google Apps Script, Google Sheets/Excel, APIs, Twilio, RPA."
       ]
     },
     {
       title: "Socio Administrador",
       company: "Clínica da Cidade | Sede Barreiras",
-      dates: "Mayo/22 a Abril/24",
+      dates: "Mayo 2022 a Abril 2024",
       description: [
-        "Gestión completa de la operación, desde la apertura hasta la venta de la sede.",
-        "Gestión de un equipo multidisciplinario, promoviendo una cultura de excelencia y optimización de recursos.",
-        "Gestión completa de cuentas por cobrar y por pagar, estado de resultados, flujo de caja y proyecciones.",
-        "Gestión y relación con clientes, médicos y otros profesionales de la salud."
+        "Gestión operativa integral de la unidad médica, desde la apertura inicial hasta la venta exitosa del negocio.",
+        "Liderazgo de un equipo multidisciplinario, promoviendo una cultura de excelencia operativa y optimización de recursos.",
+        "Control financiero integral: cuentas por cobrar y por pagar, estado de resultados (P&L), flujo de caja y proyecciones financieras.",
+        "Gestión de relaciones estratégicas con pacientes, cuerpo médico y profesionales de la salud."
       ]
     },
     {
       title: "Gerente de Operaciones e Instructor",
       company: "Microlins",
-      dates: "Julio/15 a Julio/17",
+      dates: "Julio 2015 a Julio 2017",
       description: [
-        "Liderazgo de la sede con gestión completa de los equipos pedagógico y comercial, control financiero (flujo de caja, cuentas por pagar y cobrar) y acciones de marketing y expansión.",
-        "Enseñanza y charlas: profesor de informática para grupos regulares y clases VIP, y ponente en el ciclo de mercado laboral y capacitación profesional de la institución.",
-        "Optimización de procesos operativos con rutinas estandarizadas para el control de grupos y el seguimiento de la satisfacción y retención de alumnos.",
-        "Ciclo completo de gestión de personas: reclutamiento, selección y capacitación continua de los equipos mediante formaciones técnicas y comportamentales."
+        "Liderazgo integral de la sede con supervisión directa de los equipos pedagógico y comercial, control financiero (flujo de caja, cuentas por pagar y cobrar) y estrategias de marketing y expansión.",
+        "Docencia y conferencias: instructor de informática para grupos regulares y clases VIP, y conferencista en el ciclo de inserción laboral y desarrollo profesional de la institución.",
+        "Optimización de procesos operativos mediante la estandarización de rutinas para el control de grupos y el seguimiento de la satisfacción y retención de alumnos.",
+        "Ciclo completo de gestión de personas: reclutamiento, selección y capacitación continua de los equipos mediante formaciones técnicas y de habilidades."
       ]
     }
   ],

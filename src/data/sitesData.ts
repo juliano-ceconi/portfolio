@@ -202,7 +202,7 @@ export const sites: Localized<Site[]> = {
       id: 1,
       name: 'Hub Agente IA',
       pitch:
-        'Plataforma comercial de automatización y agentes de IA para empresas, con presentación de soluciones, atención 24/7 y captación integrada.',
+        'Plataforma comercial de automatización y agentes de IA para empresas: presentación de soluciones, atención automatizada 24/7 y captación de clientes en un solo lugar.',
       tags: ['Agentes de IA', 'Automatización comercial', 'WhatsApp', 'Conversión'],
       url: 'https://www.hubagenteia.com.br/',
       slug: 'hub-agente-ia',
@@ -212,7 +212,7 @@ export const sites: Localized<Site[]> = {
       id: 2,
       name: 'Juliano Ceconi Academy',
       pitch:
-        'Plataforma de cursos completa, con área de alumno, video y seguimiento de progreso, alojada en servidor propio.',
+        'Plataforma educativa completa con panel del alumno, lecciones en video y seguimiento de progreso, alojada en infraestructura propia.',
       tags: ['Plataforma de cursos', 'Área de alumno', 'React', 'Servidor propio'],
       url: 'https://academy.zanettin.cloud',
       slug: 'academy',
@@ -222,8 +222,8 @@ export const sites: Localized<Site[]> = {
       id: 3,
       name: 'Doroapp',
       pitch:
-        'Aplicación web de enfoque que funciona directo en el navegador, sin instalación y con los datos guardados en el propio dispositivo.',
-      tags: ['Aplicación web', 'Sin conexión', 'Interfaz propia'],
+        'Aplicación web de productividad y enfoque que funciona directamente en el navegador, sin instalación y guardando todos los datos localmente en el dispositivo.',
+      tags: ['Aplicación web', 'Modo offline', 'Interfaz a medida'],
       url: 'https://doroapp.vercel.app/',
       slug: 'doroapp',
       label: 'proprio',
@@ -232,7 +232,7 @@ export const sites: Localized<Site[]> = {
       id: 4,
       name: 'Gato Preto',
       pitch:
-        'Página comercial de consultoría: muestra el dolor del cliente arriba y lleva a WhatsApp en un clic, sin formulario en el camino.',
+        'Página de venta para consultoría B2B: aborda los puntos de dolor del cliente desde el inicio y conecta directamente a WhatsApp en un clic, sin formularios de por medio.',
       tags: ['Página comercial', 'Consultoría B2B', 'WhatsApp', 'Conversión'],
       url: 'https://gatopretoia.vercel.app/',
       slug: 'gato-preto',
@@ -242,7 +242,7 @@ export const sites: Localized<Site[]> = {
       id: 5,
       name: 'Okam',
       pitch:
-        'Sitio institucional de un marco de gobernanza de IA, con la estructura de contenido pensada para quien llega desde el buscador.',
+        'Sitio institucional para un framework de gobernanza de IA, con estructura de contenido optimizada para posicionamiento en motores de búsqueda.',
       tags: ['Sitio institucional', 'Contenido', 'Rendimiento'],
       url: 'https://okam-os.vercel.app/',
       slug: 'okam',
@@ -252,7 +252,7 @@ export const sites: Localized<Site[]> = {
       id: 6,
       name: 'Tia Mimi: Hospedagem e Creche Canina',
       pitch:
-        'Sitio de negocio local que convierte la visita en conversación: contacto directo por WhatsApp, tabla de servicios y presencia en Google Maps.',
+        'Sitio para negocio local que transforma visitas en conversaciones: contacto directo por WhatsApp, tabla de servicios clara e integración con Google Maps.',
       tags: ['Landing page', 'SEO local', 'WhatsApp', 'Responsivo'],
       url: 'https://tiamimi.vercel.app/',
       slug: 'petsitting-lem',
@@ -262,7 +262,7 @@ export const sites: Localized<Site[]> = {
       id: 7,
       name: 'Vô Tech',
       pitch:
-        'Sitio de servicios con blog y catálogo de ofertas que reúne sistemas, automatización, cursos y creación de sitios en una sola vitrina.',
+        'Sitio de servicios con blog y catálogo comercial que reúne sistemas a medida, automatización, cursos y desarrollo web en una sola vitrina.',
       tags: ['Sitio de servicios', 'Blog', 'Catálogo', 'Conversión'],
       url: 'https://votechautomacao.vercel.app/',
       slug: 'votech',
@@ -272,7 +272,7 @@ export const sites: Localized<Site[]> = {
       id: 8,
       name: 'Anticaos',
       pitch:
-        'Guía digital publicada como sitio web: contenido largo organizado en una navegación ligera que abre rápido en el móvil.',
+        'Guía digital publicada como sitio web: contenido extenso organizado en una navegación ágil e intuitiva, optimizada para carga instantánea en móviles.',
       tags: ['Sitio de contenido', 'Navegación', 'Móvil'],
       url: 'https://anticaos.vercel.app/',
       slug: 'anticaos',
@@ -282,7 +282,7 @@ export const sites: Localized<Site[]> = {
       id: 9,
       name: 'OpenCRO',
       pitch:
-        'Portal de producto que explica una solución técnica en lenguaje simple y lleva al visitante directo a la descarga.',
+        'Portal de producto que explica una solución técnica en lenguaje claro y accesible, guiando al visitante directamente a la descarga.',
       tags: ['Sitio de producto', 'Documentación', 'Conversión'],
       url: 'https://opencro.vercel.app',
       slug: 'opencro',

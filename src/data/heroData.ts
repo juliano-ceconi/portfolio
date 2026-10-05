@@ -5,7 +5,7 @@ const whatsappNumero = '557799213803';
 const whatsappMensagem: Localized<string> = {
   'pt-BR': 'Olá, Juliano! Vim pelo seu portfólio e queria conversar sobre um projeto.',
   en: 'Hi, Juliano! I saw your portfolio and would like to talk about a project.',
-  es: '¡Hola, Juliano! Vine desde tu portafolio y me gustaría hablar sobre un proyecto.',
+  es: '¡Hola, Juliano! Vi tu portafolio y me gustaría conversar sobre un proyecto.',
 };
 
 /** Link do WhatsApp com a mensagem já escrita no idioma da página. */
@@ -104,7 +104,7 @@ export const heroData: Localized<Hero> = {
     name: 'Juliano Ceconi',
     title: 'Automatización, agentes de IA y sitios web para pymes',
     description:
-      'Le quito a tu equipo la tarea repetitiva y pongo la solución en marcha: atención automática por WhatsApp, un sistema que ordena clientes y ventas, la rutina que hoy te come las horas. También creo sitios web y páginas de venta desde cero, sin plantillas. Ya administré una empresa y conozco el cuello de botella por dentro. Hago desde el diseño hasta la producción yo mismo, sin pasarlo a terceros.',
+      'Libero a tu equipo de las tareas repetitivas y pongo la solución en producción: atención automática por WhatsApp, sistemas que organizan clientes y ventas, y automatizaciones que te devuelven horas de trabajo. También creo sitios web y páginas de venta desde cero, sin plantillas prefabricadas. Habiendo administrado mi propia empresa, conozco los cuellos de botella operativos desde adentro. Me encargo de todo, desde el diseño hasta la producción, sin intermediarios ni tercerización.',
     profilePicture: 'https://i.imgur.com/VZjuj6M.png',
     skills: [
       'Agentes de IA',

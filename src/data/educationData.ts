@@ -52,18 +52,18 @@ export const education: Localized<Education[]> = {
       institution: "Alura",
       period: "(Período: mayo de 2024 - marzo de 2025)",
       description: [
-        "Formación centrada en automatización y desarrollo de negocios. Principales habilidades adquiridas:",
+        "Formación especializada en automatización y desarrollo de negocios. Principales competencias adquiridas:",
         "Programación: JavaScript, Git/GitHub, Python.",
-        "Excel avanzado y VBA: BI financiero, automatización, macros.",
-        "Ciencia de datos y RPA: análisis de datos (Google Sheets), Power BI, herramientas RPA no-code y low-code.",
-        "Integración con IA: ChatGPT con Excel y Google Apps Script para automatización."
+        "Excel Avanzado y VBA: BI financiero, automatización y macros.",
+        "Ciencia de Datos y RPA: análisis de datos (Google Sheets), Power BI, herramientas RPA no-code y low-code.",
+        "Integración con IA: ChatGPT con Excel y Google Apps Script para automatización de flujos."
       ]
     },
     {
       institution: "UTFPR",
       period: "(Período: agosto de 2010 - junio de 2015)",
       description: [
-        "Ingeniería Civil, incompleta. Materias concluidas destacadas: cálculo diferencial e integral I, II y III, física I, II y III, química, fundamentos de programación, metodología científica, probabilidad y estadística, topografía, dibujo técnico, proyecto arquitectónico, geometría analítica y álgebra lineal."
+        "Ingeniería Civil (estudios universitarios avanzados completados). Materias destacadas aprobadas: cálculo diferencial e integral I, II y III, física I, II y III, química, fundamentos de programación, metodología científica, probabilidad y estadística, topografía, dibujo técnico, diseño arquitectónico, geometría analítica y álgebra lineal."
       ]
     }
   ],

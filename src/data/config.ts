@@ -25,7 +25,7 @@ export const siteCopy: Localized<SiteCopy> = {
   es: {
     siteTitle: 'Juliano Ceconi | Automatización, agentes de IA y sitios web para pymes',
     description:
-      'Automatización de procesos, agentes de IA que atienden por WhatsApp, sistemas de gestión a medida y creación de sitios web para pequeñas y medianas empresas. Del diseño a la producción, sin pasarlo a terceros.',
+      'Automatización de procesos, agentes de IA que atienden por WhatsApp, sistemas de gestión a medida y desarrollo de sitios web para pequeñas y medianas empresas. Del diseño a la producción, sin intermediarios ni tercerización.',
     keywords:
       'automatización de procesos, agente de IA, chatbot WhatsApp, n8n, creación de sitios web, landing page, CRM a medida, integración de sistemas, Python, React, pymes',
   },

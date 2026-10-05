@@ -60,12 +60,12 @@ export const footerData: Localized<Footer> = {
     cta: {
       titulo: 'Hablemos',
       chamada:
-        'Cuéntame cuál es el problema: la tarea que consume a tu equipo, la atención que no da abasto o el sitio web que falta. Te respondo con lo que se puede hacer y en cuánto tiempo, sin compromiso.',
+        'Cuéntame cuál es tu cuello de botella: las tareas repetitivas que sobrecargan a tu equipo, la atención a clientes que no da abasto o el sitio web que necesitas en línea. Te respondo con soluciones concretas, plazos y alcance, sin ningún compromiso.',
       whatsappLabel: 'Hablar por WhatsApp',
       whatsappUrl: whatsappUrl('es'),
       email: heroData['pt-BR'].contact.email,
     },
     socialLinks: redes,
-    quote: '"Convertimos procesos complejos en soluciones inteligentes."',
+    quote: '"Transformando procesos complejos en soluciones inteligentes."',
   },
 };
