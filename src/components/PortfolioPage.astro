@@ -31,7 +31,7 @@ const idiomasAlternativos = LANGS.filter((idioma) => idioma !== lang);
     </Button>
     <nav
       aria-label={t.languageSelector}
-      class="flex flex-col items-start gap-1 rounded-3xl border border-input bg-background p-1"
+      class="flex flex-col items-start gap-1 rounded-2xl sm:rounded-3xl border border-input bg-background p-1"
     >
       <div class="flex items-center gap-1">
         <a
@@ -39,14 +39,14 @@ const idiomasAlternativos = LANGS.filter((idioma) => idioma !== lang);
           lang={htmlLang[lang]}
           hreflang={htmlLang[lang]}
           aria-current="page"
-          class="rounded-full bg-accent p-2 transition-colors"
+          class="rounded-full bg-accent p-1.5 sm:p-2 transition-colors"
         >
           <img
             src={langFlag[lang]}
             alt=""
             width="24"
             height="17"
-            class="h-[17px] w-6 rounded-[2px] ring-1 ring-border"
+            class="h-[14px] w-5 sm:h-[17px] sm:w-6 rounded-[2px] ring-1 ring-border"
           />
           <span class="sr-only">{langName[lang]}</span>
         </a>
@@ -55,9 +55,9 @@ const idiomasAlternativos = LANGS.filter((idioma) => idioma !== lang);
           id="alternar-idiomas"
           aria-expanded="false"
           aria-controls="idiomas-alternativos"
-          class="rounded-full p-2 text-muted-foreground transition-transform hover:bg-accent hover:text-accent-foreground"
+          class="rounded-full p-1.5 sm:p-2 text-muted-foreground transition-transform hover:bg-accent hover:text-accent-foreground"
         >
-          <ChevronDownIcon className="h-5 w-5" />
+          <ChevronDownIcon className="h-4 w-4 sm:h-5 sm:w-5" />
           <span class="sr-only">{t.languageExpand}</span>
         </button>
       </div>
@@ -68,14 +68,14 @@ const idiomasAlternativos = LANGS.filter((idioma) => idioma !== lang);
               href={pathFor(idioma)}
               lang={htmlLang[idioma]}
               hreflang={htmlLang[idioma]}
-              class="rounded-full p-2 transition-colors hover:bg-accent"
+              class="rounded-full p-1.5 sm:p-2 transition-colors hover:bg-accent"
             >
               <img
                 src={langFlag[idioma]}
                 alt=""
                 width="24"
                 height="17"
-                class="h-[17px] w-6 rounded-[2px] ring-1 ring-border"
+                class="h-[14px] w-5 sm:h-[17px] sm:w-6 rounded-[2px] ring-1 ring-border"
               />
               <span class="sr-only">{langName[idioma]}</span>
             </a>
