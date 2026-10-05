@@ -4,7 +4,7 @@ const whatsappNumero = '557799213803';
 
 const whatsappMensagem: Localized<string> = {
   'pt-BR': 'Olá, Juliano! Vim pelo seu portfólio e queria conversar sobre um projeto.',
-  en: 'Hi, Juliano! I came from your portfolio and I would like to talk about a project.',
+  en: 'Hi, Juliano! I saw your portfolio and would like to talk about a project.',
   es: '¡Hola, Juliano! Vine desde tu portafolio y me gustaría hablar sobre un proyecto.',
 };
 
@@ -72,7 +72,7 @@ export const heroData: Localized<Hero> = {
     name: 'Juliano Ceconi',
     title: 'Automation, AI agents and websites for small and medium businesses',
     description:
-      'I take the repetitive task off your team and put the solution live: automated service on WhatsApp, a system that organizes customers and sales, the routine that eats your hours today. I also build websites and sales pages from scratch, with no off-the-shelf theme. I have run a company myself, so I know the bottleneck from the inside. I go from design to production on my own, nothing handed off to third parties.',
+      'I take repetitive tasks off your team and deploy solutions that deliver results: automated customer service on WhatsApp, systems that organize leads and sales, and routines that give you back your hours. I also build websites and sales pages from scratch, with zero off-the-shelf templates. Having run a company myself, I understand operational bottlenecks from the inside. I handle everything from design to production myself, with nothing handed off to third parties.',
     profilePicture: 'https://i.imgur.com/VZjuj6M.png',
     skills: [
       'AI agents',

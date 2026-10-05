@@ -63,22 +63,22 @@ export const jobs: Localized<Job[]> = {
       company: "Hub Agente IA",
       dates: "2025 - Present",
       description: [
-        "Founded and led the engineering of Hub Agente IA, building applied AI solutions, autonomous agents and custom systems for small and medium businesses:",
+        "Co-founded and led technical architecture at Hub Agente IA, developing applied AI solutions, autonomous agents and custom systems for small and medium businesses:",
         "AI agents and B2B automation: self-hosted n8n with Prometheus metrics, messaging through Evolution API (WhatsApp), Redis, Supabase/PostgreSQL, pgvector for RAG, MCP, multi-LLM orchestration and a prompt evaluation hub.",
         "Product in production: CRM built for a paying client (microlins.hubagenteia.cloud) with React, Vite, Supabase, Vitest, Docker, nginx and automated deploy over SSH key.",
         "Self-hosted infrastructure: Ubuntu 24.04 VPS with Docker Compose, Traefik with automatic TLS, fail2ban, Tailscale, PM2, backup routines and monitoring runbooks.",
-        "Engineering labs: conception and in-house development of Okam (AI governance) and Doroapp (gamified focus management).",
+        "Engineering labs: in-house design and development of Okam (AI governance) and Doroapp (gamified focus management).",
         "Technologies: n8n, Docker, Supabase, PostgreSQL, pgvector, Redis, Traefik, Tailscale, React, Vite, Node.js, Next.js, Prisma, Vitest, Evolution API, MCP, RAG, Python."
       ]
     },
     {
       title: "Finance Manager and Automation Developer",
       company: "MedPless Assist",
-      dates: "May/24 to June/25",
+      dates: "May 2024 to June 2025",
       description: [
-        "Led the modernization and automation of critical finance and IT processes, turning manual operations into data-driven systems to cut errors and free the team for higher value work.",
-        "Invoice automation in Python: end to end solution that removed manual invoice processing, with a sharp drop in time and errors.",
-        "Integrated finance system (Google Sheets + Apps Script + Twilio): real time dashboards, cash flow, automatic PDF invoices, WhatsApp notifications and income statements in a traceable, auditable ecosystem.",
+        "Led the modernization and automation of critical finance and IT processes, turning manual operations into data-driven systems to cut errors and free the team for higher-value work.",
+        "Invoice automation in Python: end-to-end solution that removed manual invoice processing, drastically reducing processing time and error rates.",
+        "Integrated finance system (Google Sheets + Apps Script + Twilio): real-time dashboards, cash flow tracking, automated PDF invoicing, WhatsApp notifications and income statements in a traceable, auditable ecosystem.",
         "Relationship management with around 80 clinics, labs and hospitals plus 20 healthcare professionals, owning the full billing and payout cycle.",
         "Technologies: Python, Google Apps Script, Google Sheets/Excel, APIs, Twilio, RPA."
       ]
@@ -86,23 +86,23 @@ export const jobs: Localized<Job[]> = {
     {
       title: "Managing Partner",
       company: "Clínica da Cidade | Barreiras branch",
-      dates: "May/22 to April/24",
+      dates: "May 2022 to April 2024",
       description: [
-        "Full management of the operation, from opening the branch to selling it.",
-        "Management of a multidisciplinary team, fostering a culture of excellence and resource optimization.",
-        "Full management of receivables and payables, income statement, cash flow statement and projections.",
-        "Relationship management with clients, doctors and other healthcare professionals."
+        "Full operational management of the medical clinic, from initial launch through to the successful sale of the business.",
+        "Leadership of a multidisciplinary team, fostering a culture of clinical excellence and operational efficiency.",
+        "Complete financial management: accounts payable/receivable, P&L statements, cash flow, and financial forecasting.",
+        "Stakeholder and partner management across patients, physicians, and healthcare specialists."
       ]
     },
     {
       title: "Operations Manager and Instructor",
       company: "Microlins",
-      dates: "July/15 to July/17",
+      dates: "July 2015 to July 2017",
       description: [
-        "Led the branch with full management of the teaching and sales teams, financial control (cash flow, payables and receivables) and marketing and growth initiatives.",
+        "Branch leadership with direct oversight of academic and sales teams, financial control (cash flow, AP/AR) and marketing and growth initiatives.",
         "Teaching and talks: computer instructor for regular classes and VIP sessions, and speaker in the institution's job market and professional development series.",
-        "Optimization of operational processes with standard routines for class control and for tracking student satisfaction and retention.",
-        "Full people management cycle: recruiting, selection and continuous training of the teams through technical and behavioral programs."
+        "Optimization of operational processes, establishing standard routines for academic administration and student retention.",
+        "Full people management cycle: recruitment, hiring and continuous development of the teams through technical and behavioral training."
       ]
     }
   ],

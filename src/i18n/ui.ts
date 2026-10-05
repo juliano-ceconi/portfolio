@@ -59,7 +59,7 @@ const strings: Localized<UiStrings> = {
     languageExpand: 'Mostrar os outros idiomas',
   },
   en: {
-    heroWhatsapp: 'Talk on WhatsApp',
+    heroWhatsapp: 'Chat on WhatsApp',
     heroGithubLabel: 'GitHub',
     heroEmailLabel: 'Send an email',
     sitesTitle: 'Real work',
@@ -82,7 +82,7 @@ const strings: Localized<UiStrings> = {
     footerCreditsDesign: 'Original design by',
     themeToggle: 'Toggle theme',
     languageSelector: 'Language',
-    languageExpand: 'Show the other languages',
+    languageExpand: 'Show other languages',
   },
   es: {
     heroWhatsapp: 'Hablar por WhatsApp',

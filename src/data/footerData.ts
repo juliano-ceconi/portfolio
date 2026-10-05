@@ -45,10 +45,10 @@ export const footerData: Localized<Footer> = {
   en: {
     currentYear: new Date().getFullYear(),
     cta: {
-      titulo: 'Let us talk',
+      titulo: "Let's talk",
       chamada:
-        'Tell me what the problem is: the task that eats your team, the customer service that cannot keep up or the website you still do not have. I answer with what can be done and how long it takes, no strings attached.',
-      whatsappLabel: 'Talk on WhatsApp',
+        "Tell me about your bottleneck: the repetitive tasks consuming your team, customer inquiries falling through the cracks, or the website you need live. I will outline practical solutions, timelines, and scope, with no strings attached.",
+      whatsappLabel: 'Chat on WhatsApp',
       whatsappUrl: whatsappUrl('en'),
       email: heroData['pt-BR'].contact.email,
     },

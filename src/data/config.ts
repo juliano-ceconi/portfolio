@@ -18,9 +18,9 @@ export const siteCopy: Localized<SiteCopy> = {
   en: {
     siteTitle: 'Juliano Ceconi | Automation, AI agents and websites for small business',
     description:
-      'Process automation, AI agents that answer on WhatsApp, custom management systems and website development for small and medium businesses. From design to production, nothing handed off to third parties.',
+      'Business process automation, intelligent WhatsApp AI agents, custom management systems and website development for small and medium businesses. From design to production, with zero outsourcing.',
     keywords:
-      'process automation, AI agent, WhatsApp chatbot, n8n, website development, landing page, custom CRM, systems integration, Python, React, small business',
+      'process automation, AI agents, WhatsApp chatbot, n8n, website development, landing page, custom CRM, systems integration, Python, React, small business',
   },
   es: {
     siteTitle: 'Juliano Ceconi | Automatización, agentes de IA y sitios web para pymes',

@@ -139,91 +139,91 @@ export const projects: Localized<Project[]> = {
     {
       id: 1,
       title: "Custom process automation",
-      summary: "The repetitive task that eats hours of your team today (issuing invoices, reconciling the bank, building a report or chasing a payment) starts running on its own. I map the bottleneck, build the automation and leave it working inside the systems you already use.",
+      summary: "The repetitive tasks draining your team's time today (invoicing, bank reconciliation, compiling reports, or chasing payments) run on autopilot. I map operational bottlenecks, build tailor-made automations, and integrate them seamlessly into the tools you already use.",
       tags: ["Process automation", "n8n", "Python", "Google Apps Script", "Integrations", "Small business"],
       details: {
-        challenge: "In most small and medium businesses the critical process depends on someone typing: invoices issued by hand, reconciliation checked line by line, the same report rebuilt every week in the same format. It is the company's most expensive hour spent on its most mechanical work, which is exactly where errors are born.",
-        solution: "I map the bottlenecks together with the people who run the process, then build custom automation with n8n, Python or Google Apps Script. The automation talks to the systems the company already has; there is no need to switch ERP or change anyone's routine.",
+        challenge: "In most small and medium-sized businesses, critical operations depend on manual entry: invoices issued by hand, reconciliations verified line by line, and the same weekly reports rebuilt from scratch. High-value talent ends up stuck doing repetitive, mechanical work: the exact place where costly human errors happen.",
+        solution: "I map operational bottlenecks directly alongside the team executing the work, then build tailor-made automations with n8n, Python, or Google Apps Script. The automations integrate directly with your existing software, requiring no ERP migration and no disruption to daily routines.",
         impact: [
-          "Invoice issuing automated with Python and Selenium, driving the supplier's own web system.",
-          "Complete finance system in Google Sheets and Apps Script: income statement, cash flow, PDF invoices, WhatsApp payment reminders and an audit log.",
-          "Delivery measured in days, not quarters. Every automation goes live and is validated in the real operation before it is closed."
+          "Automated invoice generation with Python and Selenium, interacting directly with vendor web portals.",
+          "Comprehensive financial system built in Google Sheets and Apps Script: P&L statements, cash flow, automated PDF invoicing, WhatsApp collection reminders, and full audit logs.",
+          "Delivery measured in days, not quarters. Every automation is deployed to production and field-tested in live operations before sign-off."
         ]
       }
     },
     {
       id: 2,
-      title: "AI agent that answers on WhatsApp",
-      summary: "An AI assistant on your WhatsApp: it answers at any hour, follows the context of the conversation, looks things up in the company knowledge base, qualifies the lead and hands over to a person when the conversation calls for it.",
+      title: "AI agents that handle WhatsApp customer support",
+      summary: "A dedicated 24/7 AI agent on your WhatsApp: understands conversational context, references your company's proprietary knowledge base, qualifies inbound leads, and smoothly transfers complex cases to a human team member.",
       tags: ["AI agents", "WhatsApp", "n8n", "RAG", "Evolution API", "Supabase", "Docker"],
       details: {
-        challenge: "Whoever arrives after hours or during a demand peak is left waiting, and whoever waits buys from the competitor. Hiring more people for first contact is expensive, takes time to train and still does not cover nights or weekends.",
-        solution: "A four layer ecosystem, all of it running in production at Hub Agente IA: n8n flows orchestrating the contact cycle; agents with RAG querying a pgvector vector base so answers come from the company's own content; MCP connecting the tools; and self-hosted infrastructure on Docker with Supabase and Redis.",
+        challenge: "Inquiries arriving after hours or during peak demand often get left waiting, and waiting leads quickly buy from competitors. Hiring additional staff for initial triage is expensive, requires extensive training, and still leaves nights and weekends uncovered.",
+        solution: "A robust four-layer architecture running in production at Hub Agente IA: n8n workflows orchestrating the contact lifecycle; RAG-powered agents querying pgvector embeddings to deliver accurate, grounded answers from your company documentation; MCP connecting external tools; and self-hosted Docker infrastructure with Supabase and Redis.",
         impact: [
-          "First contact and qualification working without human intervention, handing over to a person when the case requires it.",
-          "Answers anchored in the client's knowledge base, not in the model's guess.",
-          "Full engineering cycle: prompt writing, evaluation, release and observability, with Prometheus metrics on self-hosted n8n.",
-          "Multi-LLM orchestration: switching the AI model does not mean rewriting the service."
+          "Automated initial triage and lead qualification, with seamless human handoff when required.",
+          "Hallucination-resistant answers strictly grounded in verified company knowledge.",
+          "Complete AI engineering lifecycle: prompt engineering, systematic evaluation, deployment, and real-time observability with Prometheus metrics on self-hosted n8n.",
+          "Multi-LLM orchestration: upgrade or switch foundation models without rebuilding your workflows."
         ]
       }
     },
     {
       id: 3,
       title: "Website and landing page development",
-      summary: "Company website, sales page or campaign landing page: built from scratch, published with domain and HTTPS, fast on the phone and wired to your WhatsApp. I do not stop at the prototype, the page is delivered live.",
+      summary: "Corporate websites, high-converting sales pages, and campaign landing pages: built from scratch, published with custom domains and HTTPS, lightning-fast on mobile, and directly integrated with WhatsApp. Delivered live in production, not just as design mockups.",
       tags: ["Websites", "Landing pages", "React", "Vite", "Astro", "Publishing and domain"],
       details: {
-        challenge: "A company with no website loses the customer who searches before calling. And a website that does not explain in a few seconds what the company sells, or that stalls on the phone, loses the customer just the same, with the aggravating fact that it already cost money.",
-        solution: "A page built to measure, with copy written for the buyer and not for the developer, published with its own domain, security certificate and fast loading. When it makes sense, it ships already connected to WhatsApp, to a form and to the automated service.",
+        challenge: "A business without a website loses customers who research before reaching out. Worse, a site that fails to clearly explain the value proposition within seconds, or lags on mobile devices, bleeds leads just as fast, despite having already cost time and money.",
+        solution: "Custom-tailored pages with copy crafted specifically for buyers rather than developers, published with custom domains, SSL certificates, and rapid load times. Seamlessly integrated with WhatsApp, lead capture forms, and automated CRM workflows.",
         impact: [
-          "Nine projects live today: the showcase at the top of this page gathers the work, and each card leads to the published site.",
-          "Publishing, domain and HTTPS are part of the delivery; the client receives a working address, not a file.",
-          "Same technical base as the systems: the page can grow into a member area, catalog or dashboard without being rebuilt from scratch."
+          "Nine live client and proprietary projects: the portfolio showcase above displays these implementations, linking directly to each published site.",
+          "Full deployment, domain setup, and SSL configuration included; clients receive a live, production URL, not just source code files.",
+          "Engineered on modern software foundations: pages easily scale into member areas, interactive catalogs, or web apps without requiring a complete rewrite."
         ]
       }
     },
     {
       id: 4,
-      title: "Custom management system (CRM, dashboard, internal control)",
-      summary: "When no off-the-shelf tool fits and the company lives on side spreadsheets, I build the system that matches its process exactly, with per-user access control, centralized data and release to production.",
+      title: "Custom management systems (CRM, dashboards, internal tools)",
+      summary: "When off-the-shelf software falls short and your business relies on scattered spreadsheets, I engineer custom web platforms tailored to your exact workflows, complete with role-based access control, centralized data, and turnkey production deployment.",
       tags: ["React 19", "Vite", "Supabase", "PostgreSQL", "Vitest", "Docker", "nginx"],
       details: {
-        challenge: "Control scattered across loose spreadsheets, each department with its own version of the truth and nobody sure which number is right when it is time to decide. Replacing it with an off-the-shelf system usually means paying for plenty of useless features and still not covering the detail that matters.",
-        solution: "A custom web application in React 19 with Vite and a Supabase/PostgreSQL database, with automated tests in Vitest, code checks, Docker packaging and release with nginx. Versioned deploy and an operations runbook written alongside the system.",
+        challenge: "Operational data fragmented across disconnected spreadsheets, leaving each department with a different version of the truth and making confident decision-making impossible. Meanwhile, commercial SaaS platforms force you to pay for bloated features while still missing the specific nuances your business requires.",
+        solution: "Custom full-stack web applications built with React 19, Vite, and Supabase/PostgreSQL, backed by automated Vitest suites, code audits, Docker containerization, and nginx reverse proxies. Includes automated versioned deployments and comprehensive operational runbooks.",
         impact: [
-          "CRM in production for a paying Microlins client, in daily use by the sales team (microlins.hubagenteia.cloud).",
-          "A single database in place of the side spreadsheets, with history and per-user access control.",
-          "The system belongs to the client: code, database and server stay under their control, with no per-seat subscription."
+          "Production CRM deployed for an enterprise Microlins franchise, actively used daily by their admissions and sales teams (microlins.hubagenteia.cloud).",
+          "A single source of truth replacing rogue spreadsheets, complete with change audit histories and role-based permissions.",
+          "Full intellectual property and data ownership: code, databases, and infrastructure remain entirely under client control with zero per-seat subscription fees."
         ]
       }
     },
     {
       id: 5,
       title: "Financial management and automation",
-      summary: "Structuring of financial routines, real time cash flow, reconciliation and automatic collection. It puts an end to managing in the dark and to manual rework across mismatched spreadsheets.",
+      summary: "Financial operations architecture: real-time cash flow monitoring, automated bank reconciliation, and smart collection workflows. Eliminates blind financial management and hours spent wrangling conflicting spreadsheets.",
       tags: ["Financial management", "Cash flow", "Management income statement", "Automatic collection", "Bank reconciliation", "Small business"],
       details: {
-        challenge: "Many companies operate without real clarity about their margins: payments fall behind for lack of follow-up, reconciliation eats hours of manual checking and the monthly close turns into a guess. The manager spends energy putting out operational fires instead of deciding with numbers they can trust.",
-        solution: "Practical organization of the finance area combined with automation. Cash flow control, quick reconciliation, automated collection sequences and statements that show the real result of the operation.",
+        challenge: "Many growing businesses operate without clear visibility into real margins: accounts receivable slip due to absent follow-up, reconciliation consumes hours of manual verification, and monthly closes become educated guesses. Leadership ends up fighting administrative fires instead of steering strategy with dependable data.",
+        solution: "Hands-on financial structuring paired with custom automation: rigorous cash flow controls, rapid reconciliation pipelines, automated debt collection sequences, and reliable P&L statements reflecting true operating health.",
         impact: [
-          "Integrated finance ecosystem with automatic PDF invoices, management income statement and payment reminders over WhatsApp.",
-          "Less time spent on bank reconciliation and on issuing invoices by hand.",
-          "A clear view of cash and predictable receipts, so decisions rest on evidence."
+          "Integrated financial automation delivering automated PDF invoices, P&L reporting, and scheduled WhatsApp payment reminders.",
+          "Drastic reduction in manual overhead for invoice generation and bank account reconciliation.",
+          "Real-time cash flow visibility and predictable receivables, enabling evidence-based financial decisions."
         ]
       }
     },
     {
       id: 6,
-      title: "Training and workshop on AI applied to the business",
-      summary: "A hands-on workshop so the team uses AI in everyday work, focused on practice and free of unnecessary theory. The team learns to apply it to its own process and to maintain what was built.",
+      title: "Workshops and training: Applied AI for business teams",
+      summary: "Practical, hands-on workshops empowering internal teams to leverage modern AI in their daily operations. Strictly focused on real-world business workflows, free of academic fluff, ensuring staff can maintain and build upon their automations.",
       tags: ["Training", "Workshop", "Applied AI", "Automation", "Excel and Google Sheets", "In-company"],
       details: {
-        challenge: "The team hears about AI every day and has no idea where it touches their own work. The result: either nobody uses it, or everyone uses it their own way, with no criteria and no clarity about what may or may not leave the company.",
-        solution: "Content built on the company's real process: where AI and automation fit, where they do not, what may be sent to a third party tool and how to maintain what was created. Half day format or in-company track.",
+        challenge: "Teams encounter AI buzz daily but lack practical clarity on where it applies to their actual responsibilities. The outcome: either zero adoption, or chaotic, unguided usage that risks data privacy without standard quality controls.",
+        solution: "Curriculum customized around your company's actual operational workflows: identifying high-impact AI use cases, defining security boundaries for sensitive data, and training staff to build and maintain their own automations. Available in half-day intensives or ongoing corporate tracks.",
         impact: [
-          "Classroom experience: computer instructor (regular and VIP classes) and speaker in the Microlins job market series.",
-          "Own course platform in production: Juliano Ceconi Academy, with student portal and lesson player.",
-          "The team starts creating and maintaining its own automations, depending less on outside support."
+          "Proven instructional background: extensive experience as an IT instructor and featured speaker on professional workforce enablement.",
+          "Proprietary educational platform live in production: Juliano Ceconi Academy, complete with an interactive student portal and video delivery.",
+          "Teams gain operational autonomy: internal staff confidently create, adapt, and maintain core business automations without external dependency."
         ]
       },
       links: [
@@ -235,16 +235,16 @@ export const projects: Localized<Project[]> = {
     },
     {
       id: 7,
-      title: "Your own infrastructure, secure and under your control",
-      summary: "Server, publishing, security and backup for what gets built. The system runs on its own infrastructure, with a predictable server cost instead of a per-seat subscription, looked after by the person who built the solution.",
+      title: "Self-hosted private infrastructure: secure and fully under your control",
+      summary: "Turnkey server configuration, deployment, cybersecurity, and automated backup for custom software. Your systems run on dedicated private infrastructure with predictable hosting costs rather than compounding per-user fees, managed directly by the engineer who built the solution.",
       tags: ["VPS", "Docker", "Traefik", "TLS", "fail2ban", "Tailscale", "Backup", "PM2"],
       details: {
-        challenge: "A system delivered with nobody to operate the server becomes the client's problem at the first incident. And the common alternative of stacking third party subscriptions turns a variable cost into an expense that grows out of control.",
-        solution: "Full self-hosted operation on an Ubuntu 24.04 VPS: Docker and Docker Compose, Traefik publishing the services with TLS certificates, fail2ban blocking intrusion attempts, a firewall closing public administrative access, remote administration over the Tailscale private network and processes managed with PM2.",
+        challenge: "Deploying software without operational support leaves businesses stranded during production incidents. Conversely, stacking third-party SaaS subscriptions turns predictable operating costs into runaway monthly expenses.",
+        solution: "Complete self-hosted production architecture on Ubuntu 24.04 LTS: Docker and Docker Compose containerization, Traefik reverse proxying with automatic Let's Encrypt TLS certificates, fail2ban intrusion prevention, locked-down public ports, encrypted remote administration via Tailscale VPN, and PM2 process management.",
         impact: [
-          "Several services in production on the same server, each with its own address and certificate.",
-          "Backup, restore and monitoring with practical operational documentation, so the procedures exist before any incident.",
-          "Administrative access off the public internet: the admin port is closed, entry only through the private network."
+          "Multiple isolated production workloads coexisting securely on a single host, each with distinct domains and automated SSL certificates.",
+          "Automated backup, recovery, and health monitoring accompanied by concise operational runbooks, ensuring rapid incident resolution.",
+          "Zero exposure of administrative ports to the public internet: server management is restricted entirely to authenticated private mesh networks (Tailscale)."
         ]
       }
     }

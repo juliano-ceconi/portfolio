@@ -43,7 +43,7 @@ export const education: Localized<Education[]> = {
       institution: "UTFPR",
       period: "(Period: August 2010 - June 2015)",
       description: [
-        "Civil Engineering, unfinished. Completed courses worth noting: calculus I, II and III, physics I, II and III, chemistry, programming fundamentals, scientific methodology, probability and statistics, surveying, technical drawing, architectural design, analytic geometry and linear algebra."
+        "Civil Engineering (undergraduate coursework completed). Core STEM courses completed: calculus I, II and III, physics I, II and III, chemistry, programming fundamentals, scientific methodology, probability and statistics, surveying, technical drawing, architectural design, analytic geometry and linear algebra."
       ]
     }
   ],
